@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sensorLayout.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/GA/individual.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/GA/population.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/GA/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/tools/calDistance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/AHP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/TOPSIS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/centralityValue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/data/Net3.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/data/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_importance/data/ky8.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Net3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Net3.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Net3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Net3DisDic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screeningLeakNode/data/Net3.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screeningLeakNode/data/ky8.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screeningLeakNode/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screeningLeakNode/minMeanSquareError.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screeningLeakNode/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulation/Mat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulation/readAndDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulation/testLeakSimilarity.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="qiujiaping" />
+        <option value="邱嘉平" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\科研\code\sensorLayout\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bZVW2iRsEt28dKpbDs3RlSCS98" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/result" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\main\tools" />
+      <recent name="D:\科研\code\sensorLayout\Data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\result" />
+      <recent name="D:\科研\code\sensorLayout" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.individual">
+    <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\科研\code\sensorLayout\Data\getMat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TOPSIS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/node_importance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/node_importance/TOPSIS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="individual" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/individual.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="population" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/population.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.individual" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.population" />
+        <item itemvalue="Python.start" />
+        <item itemvalue="Python.TOPSIS" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="" />
+      <created>1588839630199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588839630199</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020/5/13，未写完" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/5/13，未写完" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser/0.40.1280.680@0.40.1280.680" timestamp="1588841324536" />
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588863651595">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1588863651595" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1589383587977">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1589383587977" />
+    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1589025865140">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1589025865140" />
+    <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog" timestamp="1589383190263">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog/0.40.1280.680@0.40.1280.680" timestamp="1589383190263" />
+    <state width="1259" height="138" key="GridCell.Tab.0.bottom" timestamp="1589381102564">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589381102564" />
+    <state width="1259" height="138" key="GridCell.Tab.0.center" timestamp="1589381102563">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1589381102563" />
+    <state width="1259" height="138" key="GridCell.Tab.0.left" timestamp="1589381102563">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1589381102563" />
+    <state width="1259" height="138" key="GridCell.Tab.0.right" timestamp="1589381102564">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1589381102564" />
+    <state width="1259" height="138" key="GridCell.Tab.1.bottom" timestamp="1589381100196">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589381100196" />
+    <state width="1259" height="138" key="GridCell.Tab.1.center" timestamp="1589381100196">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1589381100196" />
+    <state width="1259" height="138" key="GridCell.Tab.1.left" timestamp="1589381100196">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1589381100196" />
+    <state width="1259" height="138" key="GridCell.Tab.1.right" timestamp="1589381100196">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="1259" height="138" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1589381100196" />
+    <state x="142" y="40" key="SettingsEditor" timestamp="1589384238003">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1589384238003" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1589383501192">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1589383501192" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1589357651119">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1589357651119" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1589024961455">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.40.1280.680@0.40.1280.680" timestamp="1589024961455" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/GA/population.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/GA/test.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
