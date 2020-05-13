@@ -120,10 +120,11 @@ class ga:
         pass
 
 if __name__=="__main__":
-    g=ga(10,2,0.8,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
-    Pops = population(10, 2, "D:/科研/code/sensorLayout/result/Net3.inp")
-    Pops.generatePopulations()  # 产生初始种群
-    g.calFiteness(Pops,np.array(range(1,10)).reshape(3,3))
+    pass
+    # g=ga(10,2,0.8,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
+    # Pops = population(10, 2, "D:/科研/code/sensorLayout/result/Net3.inp")
+    # Pops.generatePopulations()  # 产生初始种群
+    # g.calFiteness(Pops,np.array(range(1,10)).reshape(3,3))
 
 
 
