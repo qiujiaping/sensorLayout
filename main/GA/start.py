@@ -17,7 +17,7 @@ import time
 '''
 
 class ga:
-    def __init__(self,pop_size:str,chrom_length:str,pc:str,pm:str,iteration:int,inp:str):
+    def __init__(self,pop_size:str,chrom_length:str,pc:str,pm:str,iteration:int,inp=None):
         """
         @param pop_size: 种群规模
         @param chrom_length: 染色体长度
@@ -73,16 +73,23 @@ class ga:
         """
         individualList=Pops.populations #引用类型，会把种群里的实例数据更改
         fitness=[]
+        n,leaks=senMat.shape
         for individual in individualList:
             selectSenMat = []
             chromosome=individual.chromosome
-            for i in chromosome:
+            for i in chromosome:    #挑选对应染色体（传感器节点）上的敏感度矩阵的行组成新的压缩敏感度矩阵
                 selectSenMat.append(senMat[i])
             selectSenMat=np.array(selectSenMat)
-
-
-
-
+            result=0
+            for i in range(leaks):  #计算个体适应度值
+                temp=selectSenMat[:,i]
+                if(i==leaks-1): #当在最后那列时不能继续再算
+                    break
+                for j in range(i+1,leaks):
+                    result=result+temp.dot(selectSenMat[:,j])
+            value=2*result/(leaks * (leaks - 1))
+            individual.fitness=value    #这里需不需要需要考虑
+            fitness.append(value)
         return fitness
 
 
@@ -110,6 +117,13 @@ class ga:
         best_individual=Pops.populations[index]
         return best_value,best_individual
     def resultPlot(self):
+        pass
+
+if __name__=="__main__":
+    g=ga(10,2,0.8,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
+    Pops = population(10, 2, "D:/科研/code/sensorLayout/result/Net3.inp")
+    Pops.generatePopulations()  # 产生初始种群
+    g.calFiteness(Pops,np.array(range(1,10)).reshape(3,3))
 
 
 
