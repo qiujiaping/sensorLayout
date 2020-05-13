@@ -20,6 +20,6 @@ if __name__=="__main__":
     a=d.collection
     print(a[0].value)
     value=a[0].value
-    value="assdssa"
+    value="assa"
     print(value)
 
