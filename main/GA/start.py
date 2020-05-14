@@ -46,14 +46,16 @@ class ga:
         @param senMat: 敏感度矩阵
         """
         senMat=senMat.T #转置使得行为节点，列为泄漏点
+
         Pops=population(self.pop_size,self.chrom_length,self.inp)
         Pops.generatePopulations()   #产生初始种群
         for  i in range(self.iteration):
             start = time.clock()
             fitness=self.calFiteness(Pops,senMat)
             fitnessTime = time.clock()
-            best_value,best_individual=self.best(fitness,Pops)
-            print('适应度计算耗时%s' % (fitnessTime - start), '第%s代最好适应度:'%i,best_value)
+            print('适应度计算耗时%s' % (fitnessTime - start))
+            best_value, best_individual = self.best(fitness, Pops)
+            print(best_value)
             self.eachGeneBestValue.append([best_value,best_individual]) #存放每一代最好的值
             self.selection(Pops,fitness)   #选择
             self.cross(Pops)               #交叉
@@ -83,10 +85,14 @@ class ga:
             result=0
             for i in range(leaks):  #计算个体适应度值
                 temp=selectSenMat[:,i]
+                # 单位化,为了计算方便不用在分母处除模
+                unitTemp1= temp/np.linalg.norm(temp)
                 if(i==leaks-1): #当在最后那列时不能继续再算
                     break
                 for j in range(i+1,leaks):
-                    result=result+temp.dot(selectSenMat[:,j])
+                    temp2=selectSenMat[:,j]
+                    unitTemp2=temp2/np.linalg.norm(temp2)
+                    result=result+unitTemp1.dot(unitTemp2)
             value=2*result/(leaks * (leaks - 1))
             individual.fitness=value    #这里需不需要需要考虑
             fitness.append(value)
@@ -98,7 +104,7 @@ class ga:
         @param initPops: 种群
         @param fitness:
         """
-        pass
+
 
     def cross(self,initPops):
         pass
@@ -112,19 +118,18 @@ class ga:
         @param Pops: 种群
         @return: 最好个体所对应的适应度，个体（染色体为节点的索引从0开始）
         """
-        best_value=np.max(fitness)
-        index=np.where(fitness== best_value)
-        best_individual=Pops.populations[index]
+        best_value=np.min(fitness)
+        index=np.where(fitness== best_value)    #index为元组类型这里提取第一个元素
+        best_individual=Pops.populations[index[0]].chromosome
         return best_value,best_individual
     def resultPlot(self):
         pass
 
 if __name__=="__main__":
-    pass
-    # g=ga(10,2,0.8,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
-    # Pops = population(10, 2, "D:/科研/code/sensorLayout/result/Net3.inp")
-    # Pops.generatePopulations()  # 产生初始种群
-    # g.calFiteness(Pops,np.array(range(1,10)).reshape(3,3))
+    g=ga(100,12,0.8,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
+    unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
+    g.startCalculate(unitMat)
+
 
 
 

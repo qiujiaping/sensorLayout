@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="2020/5/13，还未完善">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,27 +78,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TOPSIS" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/node_importance" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/node_importance/TOPSIS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="individual" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +112,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/population.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readAndDraw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/readAndDraw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.start" />
+        <item itemvalue="Python.readAndDraw" />
         <item itemvalue="Python.individual" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.population" />
-        <item itemvalue="Python.TOPSIS" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589388432745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2020/5/13，还未完善">
+      <created>1589388522988</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388522988</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,14 +268,14 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1588863651595" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1589388432052">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1589426539191">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1589388432052" />
-    <state width="516" height="438" key="DebuggerActiveHint" timestamp="1589387629765">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1589426539191" />
+    <state width="841" height="438" key="DebuggerActiveHint" timestamp="1589442945969">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="516" height="438" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1589387629765" />
+    <state width="841" height="438" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1589442945969" />
     <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1589025865140">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -280,38 +288,38 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="446" key="GridCell.Tab.0.bottom" timestamp="1589387631376">
+    <state width="1259" height="361" key="GridCell.Tab.0.bottom" timestamp="1589444140241">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.0.center" timestamp="1589387631376">
+    <state width="1259" height="361" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589444140241" />
+    <state width="1259" height="361" key="GridCell.Tab.0.center" timestamp="1589444140241">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.0.left" timestamp="1589387631376">
+    <state width="1259" height="361" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1589444140241" />
+    <state width="1259" height="361" key="GridCell.Tab.0.left" timestamp="1589444140241">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.0.right" timestamp="1589387631376">
+    <state width="1259" height="361" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1589444140241" />
+    <state width="1259" height="361" key="GridCell.Tab.0.right" timestamp="1589444140241">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.1.bottom" timestamp="1589387631376">
+    <state width="1259" height="361" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1589444140241" />
+    <state width="1259" height="189" key="GridCell.Tab.1.bottom" timestamp="1589443655784">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.1.center" timestamp="1589387631376">
+    <state width="1259" height="189" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589443655784" />
+    <state width="1259" height="189" key="GridCell.Tab.1.center" timestamp="1589443655784">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
-    <state width="1259" height="446" key="GridCell.Tab.1.left" timestamp="1589387631375">
+    <state width="1259" height="189" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1589443655784" />
+    <state width="1259" height="189" key="GridCell.Tab.1.left" timestamp="1589443655783">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1589387631375" />
-    <state width="1259" height="446" key="GridCell.Tab.1.right" timestamp="1589387631376">
+    <state width="1259" height="189" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1589443655783" />
+    <state width="1259" height="189" key="GridCell.Tab.1.right" timestamp="1589443655784">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="446" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1589387631376" />
+    <state width="1259" height="189" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1589443655784" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1589388367932">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -320,14 +328,14 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1589384238003" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1589388443776">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1589388552286">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1589388443776" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1589357651119">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1589388552286" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1589443540563">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1589357651119" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1589443540563" />
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1589024961455">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -340,6 +348,11 @@
           <url>file://$PROJECT_DIR$/main/GA/population.py</url>
           <line>34</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/GA/start.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
