@@ -7,19 +7,26 @@
 @time: 2020/5/13 22:02
 @desc:
 '''
-
-class animal:
+from abc import ABCMeta, abstractmethod
+class animal(metaclass=ABCMeta):
     def __init__(self):
         self.value=5
 
-class dog:
+    @abstractmethod
+    def say(self):
+        """"""
+
+
+
+class dog(animal):
     def __init__(self):
-        self.collection=[animal() for i in range(2)]
+       pass
+
+    def say(self):
+        print("ssssss")
+
+
 if __name__=="__main__":
     d=dog()
-    a=d.collection
-    print(a[0].value)
-    value=a[0].value
-    value="assa"
-    print(value)
+    d.say()
 

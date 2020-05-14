@@ -21,8 +21,19 @@ class individual:
 
         """
         self.chrom_length=chrom_length
-        self.chromosome=sorted(random.sample(nodeIndexList,chrom_length))
-        self.fitness = None     #包含适应度
+        self._chromosome=sorted(random.sample(nodeIndexList,chrom_length))
+        # self.fitness = None     #可以选择是否包含适应度
+
+    @property
+    def chromosome(self):
+        return self._chromosome
+
+    @chromosome.setter
+    def chromosome(self,value):
+        self._chromosome=value
+
+
+
 
 if __name__=="__main__":
     a=individual(6,range(20))

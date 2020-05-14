@@ -25,11 +25,11 @@ class population:
         wn = wntr.network.WaterNetworkModel(self.inp)
         self.nodeIndexList = list(range(wn.num_junctions) )    #节点id范围
 
-    def generatePopulations(self):
+    def initPopulations(self):
         for i in range(self.pop_size):
             self.populations.append(individual(self.chrom_length,self.nodeIndexList))
 
 if __name__=="__main__":
     pops = population(100, 6, "D:/科研/code/sensorLayout/result/Net3.inp")
-    pops.getPopulations()
+    pops.initPopulations()
     print(pops)
