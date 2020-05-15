@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="可能需要注意变量引用引起的数值隐性变化，改为深拷贝">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/individual.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/individual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/population.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="qiujiaping" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="sensorLayout" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -261,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589444749195</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="可能需要注意变量引用引起的数值隐性变化，改为深拷贝">
+      <created>1589475836463</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589475836463</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -278,7 +287,8 @@
     <MESSAGE value="2020/5/13，未写完" />
     <MESSAGE value="2020/5/13，还未完善" />
     <MESSAGE value="2020/5/14，压缩矩阵改为单位矩阵" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/5/14，压缩矩阵改为单位矩阵" />
+    <MESSAGE value="可能需要注意变量引用引起的数值隐性变化，改为深拷贝" />
+    <option name="LAST_COMMIT_MESSAGE" value="可能需要注意变量引用引起的数值隐性变化，改为深拷贝" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
@@ -289,14 +299,14 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1589475718550" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1589444748406">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1589510621412">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1589444748406" />
-    <state width="856" height="449" key="DebuggerActiveHint" timestamp="1589474728755">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1589510621412" />
+    <state width="856" height="449" key="DebuggerActiveHint" timestamp="1589510245943">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="856" height="449" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1589474728755" />
+    <state width="856" height="449" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1589510245943" />
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog" timestamp="1589444949771">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -309,42 +319,46 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog/0.40.1280.680@0.40.1280.680" timestamp="1589383190263" />
+    <state x="409" y="247" key="Github.CreatePullRequestDialog" timestamp="1589476055214">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="409" y="247" key="Github.CreatePullRequestDialog/0.40.1280.680@0.40.1280.680" timestamp="1589476055214" />
     <state x="503" y="271" key="Github.ShareDialog" timestamp="1589388129031">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="33" key="GridCell.Tab.0.bottom" timestamp="1589475734072">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1589510439224">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="33" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589475734072" />
-    <state width="1259" height="33" key="GridCell.Tab.0.center" timestamp="1589475734072">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589510439224" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1589510439224">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="33" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1589475734072" />
-    <state width="1259" height="33" key="GridCell.Tab.0.left" timestamp="1589475734072">
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1589510439224" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1589510439224">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="33" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1589475734072" />
-    <state width="1259" height="33" key="GridCell.Tab.0.right" timestamp="1589475734072">
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1589510439224" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1589510439224">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="33" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1589475734072" />
-    <state width="1259" height="387" key="GridCell.Tab.1.bottom" timestamp="1589475617609">
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1589510439224" />
+    <state width="1259" height="2" key="GridCell.Tab.1.bottom" timestamp="1589510431426">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="387" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589475617609" />
-    <state width="1259" height="387" key="GridCell.Tab.1.center" timestamp="1589475617609">
+    <state width="1259" height="2" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1589510431426" />
+    <state width="1259" height="2" key="GridCell.Tab.1.center" timestamp="1589510431426">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="387" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1589475617609" />
-    <state width="1259" height="387" key="GridCell.Tab.1.left" timestamp="1589475617609">
+    <state width="1259" height="2" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1589510431426" />
+    <state width="1259" height="2" key="GridCell.Tab.1.left" timestamp="1589510431426">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="387" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1589475617609" />
-    <state width="1259" height="387" key="GridCell.Tab.1.right" timestamp="1589475617609">
+    <state width="1259" height="2" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1589510431426" />
+    <state width="1259" height="2" key="GridCell.Tab.1.right" timestamp="1589510431426">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="387" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1589475617609" />
+    <state width="1259" height="2" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1589510431426" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1589444810760">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -353,10 +367,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1589384238003" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1589444790297">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1589510657492">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1589444790297" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1589510657492" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1589465914304">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -373,11 +387,6 @@
           <url>file://$PROJECT_DIR$/main/GA/population.py</url>
           <line>34</line>
           <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main/GA/start.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
