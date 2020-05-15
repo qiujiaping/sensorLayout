@@ -32,7 +32,7 @@ class ga:
         self.pc=pc
         self.pm=pm
         self.iteration=iteration
-        self.eachGeneBestValue=[] #存放每一代最好值[[适应度，个体]]
+        self.eachGeneBestValue={} #存放每一代最好值[[适应度，个体]]
         self.inp=inp
         wn=wntr.network.WaterNetworkModel(inp)
         nodeID=wn.junction_name_list
@@ -51,21 +51,24 @@ class ga:
 
         Pops=population(self.pop_size,self.chrom_length,self.inp)
         Pops.initPopulations()   #产生初始种群
+        start = time.clock()
         for  i in range(self.iteration):
-            start = time.clock()
             fitness=self.calFiteness(Pops,senMat)
             fitnessTime = time.clock()
             # print('适应度计算耗时%s' % (fitnessTime - start))
             best_value, best_individual = self.best(fitness, Pops)
             print(best_value,best_individual)
-            self.eachGeneBestValue.append([best_value,best_individual]) #存放每一代最好的值
+            self.eachGeneBestValue.update({best_value:best_individual}) #存放每一代最好的值
             self.selection(Pops,fitness)   #选择
             self.cross(Pops)               #交叉
             self.mutation(Pops)            #变异
-            eachGeneTime=time.clock()
-            print('第',i,'代计算耗时%s' % (eachGeneTime - start))
-        with open("D:/科研/code/sensorLayout/result/Net3.txt",'w')as f:
-            f.write(str(self.eachGeneBestValue))
+
+        # with open("D:/科研/code/sensorLayout/result/Net3.txt",'w')as f:
+        #     f.write(str(self.eachGeneBestValue))
+        end = time.clock()
+        print('共耗时%s' % (end - start))
+        self.resultPlot()
+
 
 
     """
@@ -197,11 +200,19 @@ class ga:
 
 
     def resultPlot(self):
-        pass
+
+        plt.rcParams['font.sans-serif'] = ['SimHei']
+        plt.rcParams['axes.unicode_minus'] = False
+        # 在坐标轴上显示节点重要性图
+        plt.plot(range(len(self.eachGeneBestValue.keys())), [fiteness for fiteness in self.eachGeneBestValue.keys()], marker="o", label="节点号-重要性图")
+        # plt.xticks(range(self.iteration), range(self.iteration), rotation=90)
+        plt.xlabel('代数')
+        plt.ylabel("平均互相干系数")
+        plt.show()
 
 
 if __name__=="__main__":
-    g=ga(100,12,0.6,0.1,3,"D:/科研/code/sensorLayout/result/Net3.inp")
+    g=ga(100,6,0.6,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
     unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
     g.run(unitMat)
 
