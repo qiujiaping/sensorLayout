@@ -131,7 +131,7 @@ class ga:
         #选择
         while num_in<length:
             if(dice[num_in]<=P[cursor]):
-                new_chromosomes.append(initPops.populations[cursor].chromosome)
+                new_chromosomes.append(initPops.populations[cursor].chromosome[:]) #这里改变为:,防止值改变
                 num_in=num_in+1
             else:
                 cursor=cursor+1
@@ -142,12 +142,15 @@ class ga:
             changeIndex=changeIndex+1
 
 
+
     def cross(self,pops):
         """
         交叉
         @param pops: 种群
         """
-        old_population = copy(pops.populations)
+        old_chromosome = []
+        for individual in pops.populations:
+            old_chromosome.append(individual.chromosome[:])
         for i in range(self.pop_size- 1):
             r=random.random()
             if r < self.pc:
@@ -159,10 +162,12 @@ class ga:
         for i in range(self.pop_size):
             length= len(set(pops.populations[i].chromosome))
             if length < self.chrom_length:
-                pops.populations[i].chromosome = old_population[i].chromosome
+                pops.populations[i].chromosome = old_chromosome[i]
 
     def mutation(self,pops):
-        old_population = copy(pops.populations) #获得个体对象列表
+        old_chromosome = []
+        for individual in pops.populations:
+            old_chromosome.append(individual.chromosome[:])
         for i in range(self.pop_size):
             r = random.random()
             n = random.randint(0, self.chrom_length // 2)  # 在个体的前半段随机选取一个点进行变异
@@ -176,7 +181,7 @@ class ga:
             length= len(set(pops.populations[i].chromosome))
             if length < self.chrom_length:
                 # print(population[i],old_population[i])
-                pops.populations[i].chromosome = old_population[i].chromosome
+                pops.populations[i].chromosome = old_chromosome[i]
 
 
     def best(self,fitness,Pops):
