@@ -39,6 +39,7 @@ class ga:
         self.nodeIdIndex={}
         for i in range(len(nodeID)):
             self.nodeIdIndex.update({nodeID[i]:i})
+        self.nodeIndexList = list(range(len(nodeID)))  # 节点id范围
 
     """
         ga算法的启动函数
@@ -48,45 +49,51 @@ class ga:
         @param senMat: 敏感度矩阵
         """
         senMat=senMat.T #转置使得行为节点，列为泄漏点
-
         Pops=population(self.pop_size,self.chrom_length,self.inp)
-        Pops.initPopulations()   #产生初始种群
+        fitness= self.calFiteness(Pops, senMat)
         start = time.clock()
         for  i in range(self.iteration):
-            fitness=self.calFiteness(Pops,senMat)
-            fitnessTime = time.clock()
-            # print('适应度计算耗时%s' % (fitnessTime - start))
-            best_value, best_individual = self.best(fitness, Pops)
-            print(best_value,best_individual)
-            self.eachGeneBestValue.update({best_value:best_individual}) #存放每一代最好的值
-            self.selection(Pops,fitness)   #选择
-            self.cross(Pops)               #交叉
-            self.mutation(Pops)            #变异
+            # 复制一份父代
+            parents=Pops.copy()
+            # 记录该代最好的
+            values=list(fitness.values())
+            keys=list(fitness.keys())
+            print(values[0])
+            self.eachGeneBestValue.update({values[0]:Pops[keys[0]]}) #存放每一代最好的值
 
-        # with open("D:/科研/code/sensorLayout/result/Net3.txt",'w')as f:
-        #     f.write(str(self.eachGeneBestValue))
-        end = time.clock()
-        print('共耗时%s' % (end - start))
+            #产生子代
+            childs=self.selection(Pops,fitness)   #选择
+            self.cross(childs)               #交叉
+            self.mutation(childs)            #变异
+
+            # 子代和父代混合，选取前一半最好适应度的个体（精英保留策略）
+            parents_childs= np.vstack((parents, childs))
+            fitness={}
+            Pops = []
+            index=0
+            for key,value in list(self.calFiteness(parents_childs,senMat).items())[:self.pop_size]:
+                fitness.update({index:value})
+                Pops.append(parents_childs[key])
+                index=index+1
+            end = time.clock()
+        print(end-start)
         self.resultPlot()
-
-
 
     """
     计算适应度
     """
-    def calFiteness(self,Pops,senMat:np.ndarray)->np.ndarray:
+    def calFiteness(self,Pops,senMat:np.ndarray):
         """
         @param initPops: 种群
         @param senMat: 敏感度矩阵senMat.shape=[n，leaks]
-        @return: 适应度(每个个体的平均互相干系数)
+        @return: 适应度(每个个体的平均互相干系数)字典，节点索引：适应度
         """
-        individualList=Pops.populations #引用类型，会把种群里的实例数据更改
-        fitness=[]
+        fitness={}
         n,leaks=senMat.shape
-        for individual in individualList:
+        chromosome_index = 0
+        for indivi in Pops:
             selectSenMat = []
-            chromosome=individual.chromosome
-            for i in chromosome:    #挑选对应染色体（传感器节点）上的敏感度矩阵的行组成新的压缩敏感度矩阵
+            for i in indivi:    #挑选对应染色体（传感器节点）上的敏感度矩阵的行组成新的压缩敏感度矩阵
                 selectSenMat.append(senMat[i])
             selectSenMat=np.array(selectSenMat)
             result=0
@@ -101,9 +108,13 @@ class ga:
                     unitTemp2=temp2/np.linalg.norm(temp2)
                     result=result+unitTemp1.dot(unitTemp2)
             value=2*result/(leaks * (leaks - 1))
-            individual.fitness=value    #这里需不需要需要考虑
-            fitness.append(value)
-        return fitness
+            fitness.update({chromosome_index:value})
+            chromosome_index=chromosome_index+1
+        fitness = sorted(fitness.items(), key=lambda item: item[1])
+        new_fitness={}
+        for index_value in fitness:
+            new_fitness.update({index_value[0]:index_value[1]})
+        return new_fitness
 
 
     def selection(self,initPops,fitness):
@@ -111,10 +122,10 @@ class ga:
 
             《《《《《《《《可能改为锦标赛选择可能更好
 
-        @param initPops: 种群
+        @param initPops: 种群数组
         @param fitness:
         """
-        new_fitness=[1-value for value in fitness]  #使得越小的越大，方便计算
+        new_fitness=[1-value for value in fitness.values()]  #使得越小的越大，方便计算
         total_fitness=sum(new_fitness)
         single_p_list=[value/total_fitness for value in new_fitness]
         temp_sum=0
@@ -127,23 +138,21 @@ class ga:
         for i in range(length):  # 预先转好轮盘
             dice.append(random.random())
         dice.sort()
-        new_chromosomes=[]
+        new_chromosomes=[]  #保存选择的个体的染色体
+        temp_fitness=[]     #保存选择的个体的适应度
         num_in=0    #新选择的个体数
         cursor=0    #游标，若当前筛子的概率大于游标所指轮盘的概率则游标向前滑动以扩大范围
-
+        keys=list(fitness.keys())
+        values=list(fitness.values())
         #选择
         while num_in<length:
             if(dice[num_in]<=P[cursor]):
-                new_chromosomes.append(initPops.populations[cursor].chromosome[:]) #这里改变为:,防止值改变
+                new_chromosomes.append(initPops[keys[cursor]])
+                temp_fitness.append(values[cursor])
                 num_in=num_in+1
             else:
                 cursor=cursor+1
-        # 选择的赋给种群
-        changeIndex=0
-        for individual in initPops.populations:
-            individual.chromosome=new_chromosomes[changeIndex]
-            changeIndex=changeIndex+1
-
+        return new_chromosomes
 
 
     def cross(self,pops):
@@ -151,52 +160,48 @@ class ga:
         交叉
         @param pops: 种群
         """
-        old_chromosome = []
-        for individual in pops.populations:
-            old_chromosome.append(individual.chromosome[:])
+        old_chromosome =pops.copy()
         for i in range(self.pop_size- 1):
             r=random.random()
             if r < self.pc:
                 crossPoint = self.chrom_length// 2
                 for n in range(crossPoint, self.chrom_length):  # 选择是在个体一半处进行交叉,交换两个个体的后半段
-                    mid = pops.populations[i].chromosome[n]
-                    pops.populations[i].chromosome[n] = pops.populations[i+1].chromosome[n]
-                    pops.populations[i+1].chromosome[n] = mid
+                    mid = pops[i][n]
+                    pops[i][n]= pops[i+1][n]
+                    pops[i+1][n] = mid
         for i in range(self.pop_size):
-            length= len(set(pops.populations[i].chromosome))
+            length= len(set(pops[i]))
             if length < self.chrom_length:
-                pops.populations[i].chromosome = old_chromosome[i]
+                pops[i] = old_chromosome[i]
 
     def mutation(self,pops):
-        old_chromosome = []
-        for individual in pops.populations:
-            old_chromosome.append(individual.chromosome[:])
+        old_chromosome = pops.copy()
         for i in range(self.pop_size):
             r = random.random()
             n = random.randint(0, self.chrom_length // 2)  # 在个体的前半段随机选取一个点进行变异
             m = random.randint(self.chrom_length // 2, self.chrom_length - 1)  # 在个体的后半段随机选取一个点进行变异
             if r <= self.pm:
-                if pops.populations[i].chromosome[n]+1<=pops.nodeIndexList[-1]:
-                    pops.populations[i].chromosome[n] = pops.populations[i].chromosome[n]+1  # 整数编码,随机+1或者减1
-                if pops.populations[i].chromosome[m]-1 >= 0:
-                    pops.populations[i].chromosome[m] = pops.populations[i].chromosome[m]- 1
+                if pops[i][n]+1<=self.nodeIndexList[-1]:
+                    pops[i][n] = pops[i][n]+1  # 整数编码,随机+1或者减1
+                if pops[i][m]-1 >= 0:
+                    pops[i][m] = pops[i][m]- 1
         for i in range(self.pop_size):
-            length= len(set(pops.populations[i].chromosome))
+            length= len(set(pops[i]))
             if length < self.chrom_length:
                 # print(population[i],old_population[i])
-                pops.populations[i].chromosome = old_chromosome[i]
+                pops[i] = old_chromosome[i]
 
 
-    def best(self,fitness,Pops):
-            """
-            @param fitness: 适应度
-            @param Pops: 种群
-            @return: 最好个体所对应的适应度，个体（染色体为节点的索引从0开始）
-            """
-            best_value=np.min(fitness)
-            index=np.where(fitness== best_value)    #index为元组类型这里提取第一个元素
-            best_individual=copy(Pops.populations[index[0][0]].chromosome)
-            return best_value,best_individual
+    # def best(self,fitness,Pops):
+    #         """
+    #         @param fitness: 适应度
+    #         @param Pops: 种群
+    #         @return: 最好个体所对应的适应度，个体（染色体为节点的索引从0开始）
+    #         """
+    #         best_value=np.min(fitness)
+    #         index=np.where(fitness== best_value)    #index为元组类型这里提取第一个元素
+    #         best_individual=copy(Pops.populations[index[0][0]].chromosome)
+    #         return best_value,best_individual
 
 
     def resultPlot(self):
@@ -212,7 +217,7 @@ class ga:
 
 
 if __name__=="__main__":
-    g=ga(100,6,0.6,0.1,500,"D:/科研/code/sensorLayout/result/Net3.inp")
+    g=ga(100,6,0.6,0.1,300,"D:/科研/code/sensorLayout/result/Net3.inp")
     unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
     g.run(unitMat)
 

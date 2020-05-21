@@ -7,26 +7,24 @@
 @time: 2020/5/13 22:02
 @desc:
 '''
-from abc import ABCMeta, abstractmethod
-class animal(metaclass=ABCMeta):
-    def __init__(self):
-        self.value=5
 
-    @abstractmethod
-    def say(self):
-        """"""
-
-
-
-class dog(animal):
-    def __init__(self):
-       pass
-
-    def say(self):
-        print("ssssss")
+class Dog:
+    def __init__(self,age):
+        self.age=age
 
 
 if __name__=="__main__":
-    d=dog()
-    d.say()
+    a=[Dog(i) for i in range(3) ]
+
+    prent=a[:]
+    for i in a:
+        i.age=8
+    child=a.copy()
+
+    d = {'lilee': 25, 'wangyan': 21, 'liqun': 32, 'age': 19}
+    a={}
+
+
+
+
 

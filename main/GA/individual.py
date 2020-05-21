@@ -22,7 +22,7 @@ class individual:
         """
         self.chrom_length=chrom_length
         self._chromosome=sorted(random.sample(nodeIndexList,chrom_length))
-        # self.fitness = None     #可以选择是否包含适应度
+        self.fitness = None     #可以选择是否包含适应度
 
     @property
     def chromosome(self):
