@@ -79,6 +79,7 @@ def drawSampleTest(inp,value):
                 dotProductDic.update({nodes[i]:0})
     wntr.graphics.plot_network(wn, node_attribute=dotProductDic, title="漏损相似性", node_size=30,node_cmap=cm.coolwarm)
     plt.show()
+    print("1")
 
 if __name__=="__main__":
     # drawAllTest("result/Net3.inp")
@@ -87,8 +88,8 @@ if __name__=="__main__":
     # a=np.array(range(12)).reshape(3,4)
     # print(a)
     # drawAllTest("result/Net3.inp")
-    for i in range(92):
-        drawSampleTest("D:/科研/code/sensorLayout/result/Net3.inp",i)
+    # for i in range(92):
+    drawSampleTest("D:/科研/code/sensorLayout/result/Net3.inp",0)
 
 
 

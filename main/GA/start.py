@@ -51,8 +51,8 @@ class ga:
         senMat=senMat.T #转置使得行为节点，列为泄漏点
         Pops=population(self.pop_size,self.chrom_length,self.inp)
         fitness= self.calFiteness(Pops, senMat)
-        start = time.clock()
         for  i in range(self.iteration):
+            start=time.clock()
             # 复制一份父代
             parents=Pops.copy()
             # 记录该代最好的
@@ -76,7 +76,8 @@ class ga:
                 Pops.append(parents_childs[key])
                 index=index+1
             end = time.clock()
-        print(end-start)
+            print(end-start)
+
         self.resultPlot()
 
     """
@@ -217,7 +218,7 @@ class ga:
 
 
 if __name__=="__main__":
-    g=ga(100,6,0.6,0.1,300,"D:/科研/code/sensorLayout/result/Net3.inp")
+    g=ga(300,8,0.6,0.1,100,"D:/科研/code/sensorLayout/result/Net3.inp")
     unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
     g.run(unitMat)
 
