@@ -7,6 +7,7 @@ import wntr
 import matplotlib.pyplot as plt
 import time
 import random
+from main.tools import calDistance
 from copy import copy
 
 '''
@@ -32,7 +33,7 @@ class ga:
         self.pc=pc
         self.pm=pm
         self.iteration=iteration
-        self.eachGeneBestValue={} #存放每一代最好值[[适应度，个体]]
+        self.eachGeneBestValue=[] #存放每一代最好值[[适应度，个体]]
         self.inp=inp
         wn=wntr.network.WaterNetworkModel(inp)
         nodeID=wn.junction_name_list
@@ -40,6 +41,7 @@ class ga:
         for i in range(len(nodeID)):
             self.nodeIdIndex.update({nodeID[i]:i})
         self.nodeIndexList = list(range(len(nodeID)))  # 节点id范围
+        self.disMat=calDistance.distance(self.inp)
 
     """
         ga算法的启动函数
@@ -59,7 +61,7 @@ class ga:
             values=list(fitness.values())
             keys=list(fitness.keys())
             print(values[0])
-            self.eachGeneBestValue.update({values[0]:Pops[keys[0]]}) #存放每一代最好的值
+            self.eachGeneBestValue.append([values[0],Pops[keys[0]]]) #存放每一代最好的值
 
             #产生子代
             childs=self.selection(Pops,fitness)   #选择
@@ -98,18 +100,36 @@ class ga:
                 selectSenMat.append(senMat[i])
             selectSenMat=np.array(selectSenMat)
             result=0
+            prMat=np.zeros((leaks,leaks))
             for i in range(leaks):  #计算个体适应度值
                 temp=selectSenMat[:,i]
                 # 单位化,为了计算方便不用在分母处除模
                 unitTemp1= temp/np.linalg.norm(temp)
-                if(i==leaks-1): #当在最后那列时不能继续再算
-                    break
-                for j in range(i+1,leaks):
+                # if(i==leaks-1): #当在最后那列时不能继续再算
+                #     break
+                for j in range(i,leaks):
                     temp2=selectSenMat[:,j]
                     unitTemp2=temp2/np.linalg.norm(temp2)
+                    prMat[i][j]=unitTemp1.dot(unitTemp2)
+                    prMat[j][i] = unitTemp1.dot(unitTemp2)
                     result=result+unitTemp1.dot(unitTemp2)
             value=2*result/(leaks * (leaks - 1))
-            fitness.update({chromosome_index:value})
+            # 根据距离矩阵和相似度字典求距离更改适应度
+            similarDir={i:[] for i in range(leaks)}
+            for i in range(leaks):
+                for j in range(i,leaks):
+                    if(prMat[i][j]>value and i!=j):
+                        similarDir[i].append(j)
+                        similarDir[j].append(i)
+            disSum=0
+            for i in range(leaks):
+                tempDisMax=0
+                for j in similarDir[i]:
+                    if(self.disMat[i][j]>tempDisMax):
+                        tempDisMax=self.disMat[i][j]
+                disSum=disSum+tempDisMax
+            avlDis=disSum/(leaks)
+            fitness.update({chromosome_index:avlDis})
             chromosome_index=chromosome_index+1
         fitness = sorted(fitness.items(), key=lambda item: item[1])
         new_fitness={}
@@ -126,7 +146,7 @@ class ga:
         @param initPops: 种群数组
         @param fitness:
         """
-        new_fitness=[1-value for value in fitness.values()]  #使得越小的越大，方便计算
+        new_fitness=[1/value for value in fitness.values()]  #使得越小的越大，方便计算
         total_fitness=sum(new_fitness)
         single_p_list=[value/total_fitness for value in new_fitness]
         temp_sum=0
@@ -206,19 +226,21 @@ class ga:
 
 
     def resultPlot(self):
-
         plt.rcParams['font.sans-serif'] = ['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
-        # 在坐标轴上显示节点重要性图
-        plt.plot(range(len(self.eachGeneBestValue.keys())), [fiteness for fiteness in self.eachGeneBestValue.keys()], marker="o", label="节点号-重要性图")
-        # plt.xticks(range(self.iteration), range(self.iteration), rotation=90)
+        x = []
+        y = []
+        for i in range(self.iteration):
+            x.append(i)
+            y.append(self.eachGeneBestValue[i][0])
+        plt.plot(x, y)
         plt.xlabel('代数')
         plt.ylabel("平均互相干系数")
         plt.show()
 
 
 if __name__=="__main__":
-    g=ga(300,8,0.6,0.1,100,"D:/科研/code/sensorLayout/result/Net3.inp")
+    g=ga(100,8,0.6,0.1,100,"D:/科研/code/sensorLayout/result/Net3.inp")
     unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
     g.run(unitMat)
 

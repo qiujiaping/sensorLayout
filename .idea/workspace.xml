@@ -4,7 +4,9 @@
     <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/testLeakSimilarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/testLeakSimilarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tools/calDistance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/Net3DisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/Net3DisDic.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/project/python/demo1_Net3_KCC.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../王慧敏/PressureSensorsLocation" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -84,6 +86,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="calDistance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/tools/calDistance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo1_Net3_KCC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,27 +120,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:/project/python/demo1_Net3_KCC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="population" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/population.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.start" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.calDistance" />
         <item itemvalue="Python.demo1_Net3_KCC" />
         <item itemvalue="Python.testLeakSimilarity" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.population" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590056156508</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.0版本">
+      <created>1590150712486</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590150712486</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -321,7 +330,8 @@
     <MESSAGE value="上一版引用错误，这一版已修改好！" />
     <MESSAGE value="修改完" />
     <MESSAGE value="子代父代合并，精英保留" />
-    <option name="LAST_COMMIT_MESSAGE" value="子代父代合并，精英保留" />
+    <MESSAGE value="1.0版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
@@ -336,22 +346,22 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590056155613">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590150711673">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590056155613" />
-    <state width="989" height="449" key="DebuggerActiveHint" timestamp="1590140087023">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590150711673" />
+    <state width="1190" height="317" key="DebuggerActiveHint" timestamp="1590205440213">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="989" height="449" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1590140087023" />
+    <state width="1190" height="317" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1590205440213" />
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog" timestamp="1589444949771">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog/0.40.1280.680@0.40.1280.680" timestamp="1589444949771" />
-    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1590146463742">
+    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1590226801283">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1590146463742" />
+    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1590226801283" />
     <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog" timestamp="1589383190263">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -364,38 +374,38 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="30" key="GridCell.Tab.0.bottom" timestamp="1590150599601">
+    <state width="1259" height="294" key="GridCell.Tab.0.bottom" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="30" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590150599601" />
-    <state width="1259" height="30" key="GridCell.Tab.0.center" timestamp="1590150599601">
+    <state width="1259" height="294" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.0.center" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="30" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590150599601" />
-    <state width="1259" height="30" key="GridCell.Tab.0.left" timestamp="1590150599601">
+    <state width="1259" height="294" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.0.left" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="30" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590150599601" />
-    <state width="1259" height="30" key="GridCell.Tab.0.right" timestamp="1590150599601">
+    <state width="1259" height="294" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.0.right" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="30" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590150599601" />
-    <state width="1259" height="338" key="GridCell.Tab.1.bottom" timestamp="1590148111164">
+    <state width="1259" height="294" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.1.bottom" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="338" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590148111164" />
-    <state width="1259" height="338" key="GridCell.Tab.1.center" timestamp="1590148111164">
+    <state width="1259" height="294" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.1.center" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="338" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1590148111164" />
-    <state width="1259" height="338" key="GridCell.Tab.1.left" timestamp="1590148111164">
+    <state width="1259" height="294" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.1.left" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="338" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1590148111164" />
-    <state width="1259" height="338" key="GridCell.Tab.1.right" timestamp="1590148111164">
+    <state width="1259" height="294" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="294" key="GridCell.Tab.1.right" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="338" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1590148111164" />
+    <state width="1259" height="294" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1590040392812">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -404,14 +414,14 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1590145581510" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590150677652">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590150722401">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590150677652" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1590066311164">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590150722401" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1590156092352">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590066311164" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590156092352" />
     <state x="437" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590144854461">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -423,6 +433,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/tools/calDistance.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
