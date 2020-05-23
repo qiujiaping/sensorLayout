@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="把启动模块里面的">
+      <change afterPath="$PROJECT_DIR$/Main/GA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/cross.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/mutation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/tools/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tools/calDistance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Net3DisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/Net3DisDic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/individual.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/individual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/population.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/calDistance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +61,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../王慧敏/PressureSensorsLocation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Main1/tools" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\Main1\tools" />
+      <recent name="D:\科研\code\sensorLayout\Main1\GA" />
+      <recent name="D:\科研\code\sensorLayout\result" />
+      <recent name="D:\科研\code\sensorLayout" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\科研\code\sensorLayout\main\tools" />
       <recent name="D:\科研\code\sensorLayout\Data" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\科研\code\sensorLayout\result" />
-      <recent name="D:\科研\code\sensorLayout" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.start">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calDistance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/GA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/tools/calDistance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo1_Net3_KCC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +127,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/project/python" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/project/python/demo1_Net3_KCC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="population" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/GA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/population.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +173,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/start.py" />
+      <option name="SCRIPT_NAME" value="D:\科研\code\sensorLayout\main\GA\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,34 +203,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testLeakSimilarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/testLeakSimilarity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.start" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.population" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.calDistance" />
-        <item itemvalue="Python.demo1_Net3_KCC" />
-        <item itemvalue="Python.testLeakSimilarity" />
+        <item itemvalue="Python.start" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590150712486</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2.0版本">
+      <created>1590231731894</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590231731894</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -331,7 +350,8 @@
     <MESSAGE value="修改完" />
     <MESSAGE value="子代父代合并，精英保留" />
     <MESSAGE value="1.0版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0版本" />
+    <MESSAGE value="2.0版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
@@ -346,10 +366,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590150711673">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590234525933">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590150711673" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590234525933" />
     <state width="1190" height="317" key="DebuggerActiveHint" timestamp="1590205440213">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -374,22 +394,22 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="294" key="GridCell.Tab.0.bottom" timestamp="1590221043706">
+    <state width="1259" height="137" key="GridCell.Tab.0.bottom" timestamp="1590235237539">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="294" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
-    <state width="1259" height="294" key="GridCell.Tab.0.center" timestamp="1590221043706">
+    <state width="1259" height="137" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590235237539" />
+    <state width="1259" height="137" key="GridCell.Tab.0.center" timestamp="1590235237539">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="294" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
-    <state width="1259" height="294" key="GridCell.Tab.0.left" timestamp="1590221043706">
+    <state width="1259" height="137" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590235237539" />
+    <state width="1259" height="137" key="GridCell.Tab.0.left" timestamp="1590235237539">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="294" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
-    <state width="1259" height="294" key="GridCell.Tab.0.right" timestamp="1590221043706">
+    <state width="1259" height="137" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590235237539" />
+    <state width="1259" height="137" key="GridCell.Tab.0.right" timestamp="1590235237539">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="294" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590221043706" />
+    <state width="1259" height="137" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590235237539" />
     <state width="1259" height="294" key="GridCell.Tab.1.bottom" timestamp="1590221043706">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -414,10 +434,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1590145581510" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590150722401">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590231746083">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590150722401" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590231746083" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1590156092352">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
