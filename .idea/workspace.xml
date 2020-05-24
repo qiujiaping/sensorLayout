@@ -379,10 +379,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590235331427">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590282642317">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590235331427" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590282642317" />
     <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590247084279">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -455,6 +455,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590243568224" />
+    <state x="116" y="187" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590282792313">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="116" y="187" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.40.1280.680@0.40.1280.680" timestamp="1590282792313" />
     <state x="437" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590144854461">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
