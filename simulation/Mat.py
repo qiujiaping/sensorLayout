@@ -177,12 +177,13 @@ class Data:
     #     plt.show()
 if __name__=="__main__":
     exePath = "D:/project/Cpp/EpanetSimulation/Debug/EpanetSimulation.exe"
-    writePFN = "D:/project/Cpp/result/pressure.txt"
-    inp = "D:/project/Cpp/data/Net3.inp"
-    rpt = "D:/project/Cpp/result/Net3.rpt"
+    writePFN = "D:/project/Cpp/result/ky8pressure.txt"
+    inp = "D:/project/Cpp/data/ky8.inp"
+    rpt = "D:/project/Cpp/result/ky8.rpt"
     leakFlow = 6.3
     leakNodeIndex = 10
     data=Data(exePath,writePFN,inp,rpt,leakFlow)
+    data.saveSensitiveMat()
 
     # data.simLeakSingle(leakNodeIndex)
     # data.readPressureLeak()

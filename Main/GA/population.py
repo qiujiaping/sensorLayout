@@ -42,5 +42,5 @@ def population(pop_size:int,chrom_length:int,inp:str):
 
 
 if __name__=="__main__":
-    populations = population(100, 6, "D:/科研/code/sensorLayout/result/Net3.inp")
+    populations = population(100, 6, "D:/科研/code/sensorLayout/result/ky8.inp")
     print(populations)

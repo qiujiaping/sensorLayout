@@ -8,6 +8,22 @@
 @desc:选择
 '''
 import random
+
+def cumsum(fit_value):
+	for i in range(len(fit_value)-2, -1, -1):
+		t = 0
+		j = 0
+		while(j <= i):
+			t += fit_value[j]
+			j += 1
+		fit_value[i] = t
+		fit_value[len(fit_value)-1] = 1
+	return fit_value
+
+
+
+
+
 def selection(initPops, fitness):
     """
 
@@ -21,9 +37,10 @@ def selection(initPops, fitness):
     single_p_list = [value / total_fitness for value in new_fitness]
     temp_sum = 0
     P = []
-    for p in single_p_list:
-        temp_sum = temp_sum + p
-        P.append(temp_sum)
+    P=cumsum(single_p_list)
+    # for p in single_p_list:
+    #     temp_sum = temp_sum + p
+    #     P.append(temp_sum)
     dice = []
     length = len(fitness)
     for i in range(length):  # 预先转好轮盘

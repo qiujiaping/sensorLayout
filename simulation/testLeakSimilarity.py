@@ -53,10 +53,10 @@ def drawSampleTest(inp,value):
     @param inp:
     @param dotProduct:
     """
-    origMat = loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
+    origMat = loadSensitiveMat("D:/科研/code/sensorLayout/result/ky8.csv")
     mat=origMat.T
-    random.seed(value)
-    sensors=np.sort(random.sample(range(92),6))
+    # random.seed(value)
+    sensors=np.sort(random.sample(range(1325),25))
     measureMat=[]
     for i in range(len(sensors)):
         nodeIndex=sensors[i]
@@ -89,7 +89,7 @@ if __name__=="__main__":
     # print(a)
     # drawAllTest("result/Net3.inp")
     # for i in range(92):
-    drawSampleTest("D:/科研/code/sensorLayout/result/Net3.inp",0)
+    drawSampleTest("D:/科研/code/sensorLayout/result/ky8.inp",0)
 
 
 

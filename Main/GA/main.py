@@ -78,8 +78,8 @@ class ga:
                 fitness.update({index:value})
                 Pops.append(parents_childs[key])
                 index=index+1
-            end = time.clock()
-            print(end-start)
+            # end = time.clock()
+            # print(end-start)
 
         self.resultPlot()
 
@@ -93,7 +93,7 @@ class ga:
             y.append(self.eachGeneBestValue[i][0])
         plt.plot(x, y)
         plt.xlabel('代数')
-        plt.ylabel("平均互相干系数")
+        plt.ylabel("value")
         plt.show()
 
     # def best(self,fitness,Pops):

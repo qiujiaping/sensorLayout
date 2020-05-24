@@ -34,9 +34,11 @@ def calFiteness(Pops,disMat,senMat:np.ndarray):
             for j in range(i,leaks):
                 temp2=selectSenMat[:,j]
                 unitTemp2=temp2/np.linalg.norm(temp2)
-                prMat[i][j]=unitTemp1.dot(unitTemp2)
-                prMat[j][i] = unitTemp1.dot(unitTemp2)
-                result=result+unitTemp1.dot(unitTemp2)
+                dotProduct=unitTemp1.dot(unitTemp2)
+                prMat[i][j]=dotProduct
+                prMat[j][i] =dotProduct
+                if(i!=j):
+                    result=result+dotProduct
         value=2*result/(leaks * (leaks - 1))
         # 根据距离矩阵和相似度字典求距离更改适应度
         similarDir={i:[] for i in range(leaks)}
