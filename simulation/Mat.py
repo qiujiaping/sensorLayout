@@ -15,6 +15,7 @@ class Data:
         self.rpt = rpt
         wn = wntr.network.WaterNetworkModel(self.inp)
         self.wn = wn
+        print(wn.options.hydraulic.en2_units)
         if(wn.options.hydraulic.en2_units=='GPM'):
             self.leakFlow=leakFlow/0.063 #输入考虑L/S，如果inp文件是GPM，实例初始化转换为GPM
         else:
@@ -177,12 +178,13 @@ class Data:
     #     plt.show()
 if __name__=="__main__":
     exePath = "D:/project/Cpp/EpanetSimulation/Debug/EpanetSimulation.exe"
-    writePFN = "D:/project/Cpp/result/pressure.txt"
-    inp = "D:/project/Cpp/data/Net3.inp"
-    rpt = "D:/project/Cpp/result/Net3.rpt"
+    writePFN = "D:/project/Cpp/result/CTOWNpressure.txt"
+    inp = "D:/project/Cpp/data/CTOWN.INP"
+    rpt = "D:/project/Cpp/result/CTOWN.rpt"
     leakFlow = 6.3
     leakNodeIndex = 10
     data=Data(exePath,writePFN,inp,rpt,leakFlow)
+    data.saveSensitiveMat()
 
     # data.simLeakSingle(leakNodeIndex)
     # data.readPressureLeak()

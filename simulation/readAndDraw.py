@@ -57,5 +57,5 @@ if __name__=="__main__":
     # leakNodeIndex = 10
     # data = Data(exePath, writePFN, inp, rpt, leakFlow)
     # data.saveSensitiveMat()
-    mat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
-    drawSenPic(mat)
+    mat=loadSensitiveMat("D:/科研/code/sensorLayout/result/ky8.csv")
+    # drawSenPic(mat)

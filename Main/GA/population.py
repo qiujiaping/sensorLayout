@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-from main.GA.individual import individual
+from individual import individual
 import wntr
 
 '''
@@ -42,6 +42,5 @@ def population(pop_size:int,chrom_length:int,inp:str):
 
 
 if __name__=="__main__":
-    populations = population(100, 6, "D:/科研/code/sensorLayout/result/Net3.inp")
-
+    populations = population(100, 6, "D:/科研/code/sensorLayout/result/CTOWN.INP")
     print(populations)

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="数据改为ky8">
-      <change afterPath="$PROJECT_DIR$/main/GA/start.py" afterDir="false" />
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Main/GA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/cross.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/mutation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/GA/selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/CTOWN.INP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/calFiteness.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/cross.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/individual.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/individual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/mutation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/population.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/GA/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tools/calDistance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/individual.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/individual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/population.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/calDistance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/Net3DisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/Net3DisDic.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simulation/Mat.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/Mat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simulation/readAndDraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/readAndDraw.py" afterDir="false" />
@@ -68,18 +70,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\main\tools" />
+      <recent name="D:\科研\code\sensorLayout\Data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\科研\code\sensorLayout\result" />
       <recent name="D:\科研\code\sensorLayout\Main1\tools" />
       <recent name="D:\科研\code\sensorLayout\Main1\GA" />
       <recent name="D:\科研\code\sensorLayout" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\科研\code\sensorLayout\main\tools" />
-      <recent name="D:\科研\code\sensorLayout\Data" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.start">
+  <component name="RunManager" selected="Python.Mat">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +124,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="population" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="calDistance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/tools/calDistance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,7 +157,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/population.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,32 +195,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/GA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/GA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/GA/start.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testLeakSimilarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/testLeakSimilarity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,17 +212,17 @@
       <item itemvalue="Python.Data (1)" />
       <item itemvalue="Python.Mat" />
       <item itemvalue="Python.readAndDraw" />
-      <item itemvalue="Python.population" />
-      <item itemvalue="Python.testLeakSimilarity" />
-      <item itemvalue="Python.start" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.calDistance" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.start" />
-        <item itemvalue="Python.testLeakSimilarity" />
-        <item itemvalue="Python.readAndDraw" />
-        <item itemvalue="Python.population" />
         <item itemvalue="Python.Mat" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.calDistance" />
+        <item itemvalue="Python.readAndDraw" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590282796351</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1.0版本">
+      <created>1590285598062</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590285598062</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -417,11 +426,11 @@
     <MESSAGE value="上一版引用错误，这一版已修改好！" />
     <MESSAGE value="修改完" />
     <MESSAGE value="子代父代合并，精英保留" />
-    <MESSAGE value="1.0版本" />
     <MESSAGE value="2.0版本" />
     <MESSAGE value="把启动模块main里面的多个方法提取为函数，减少文件长度" />
     <MESSAGE value="数据改为ky8" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据改为ky8" />
+    <MESSAGE value="1.0版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590241071495">
@@ -440,14 +449,14 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590282815535">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590285597106">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590282815535" />
-    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590247084279">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590285597106" />
+    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590297470362">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1590247084279" />
+    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1590297470362" />
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog" timestamp="1590283653246">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -468,38 +477,38 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="167" key="GridCell.Tab.0.bottom" timestamp="1590284474609">
+    <state width="1259" height="111" key="GridCell.Tab.0.bottom" timestamp="1590719967373">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="167" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590284474609" />
-    <state width="1259" height="167" key="GridCell.Tab.0.center" timestamp="1590284474609">
+    <state width="1259" height="111" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
+    <state width="1259" height="111" key="GridCell.Tab.0.center" timestamp="1590719967373">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="167" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590284474609" />
-    <state width="1259" height="167" key="GridCell.Tab.0.left" timestamp="1590284474609">
+    <state width="1259" height="111" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
+    <state width="1259" height="111" key="GridCell.Tab.0.left" timestamp="1590719967372">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="167" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590284474609" />
-    <state width="1259" height="167" key="GridCell.Tab.0.right" timestamp="1590284474609">
+    <state width="1259" height="111" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590719967372" />
+    <state width="1259" height="111" key="GridCell.Tab.0.right" timestamp="1590719967373">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="167" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590284474609" />
-    <state width="1259" height="238" key="GridCell.Tab.1.bottom" timestamp="1590248304603">
+    <state width="1259" height="111" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
+    <state width="1259" height="251" key="GridCell.Tab.1.bottom" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="238" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590248304603" />
-    <state width="1259" height="238" key="GridCell.Tab.1.center" timestamp="1590248304603">
+    <state width="1259" height="251" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
+    <state width="1259" height="251" key="GridCell.Tab.1.center" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="238" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1590248304603" />
-    <state width="1259" height="238" key="GridCell.Tab.1.left" timestamp="1590248304603">
+    <state width="1259" height="251" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
+    <state width="1259" height="251" key="GridCell.Tab.1.left" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="238" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1590248304603" />
-    <state width="1259" height="238" key="GridCell.Tab.1.right" timestamp="1590248304603">
+    <state width="1259" height="251" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
+    <state width="1259" height="251" key="GridCell.Tab.1.right" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="238" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1590248304603" />
+    <state width="1259" height="251" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1590282955958">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -516,10 +525,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590243568224" />
-    <state x="96" y="160" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590283653246">
+    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590285970095">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="96" y="160" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.40.1280.680@0.40.1280.680" timestamp="1590283653246" />
+    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.40.1280.680@0.40.1280.680" timestamp="1590285970095" />
     <state x="437" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590144854461">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -533,9 +542,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main/GA/population.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="96" />
+          <url>file://$PROJECT_DIR$/Main/GA/test.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
