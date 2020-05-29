@@ -43,6 +43,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
@@ -449,10 +450,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590285597106">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590722356578">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590285597106" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590722356578" />
     <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590297470362">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
