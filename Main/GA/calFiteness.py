@@ -24,38 +24,38 @@ def calFiteness(Pops,disMat,senMat:np.ndarray):
             selectSenMat.append(senMat[i])
         selectSenMat=np.array(selectSenMat)
         result=0
-        prMat=np.zeros((leaks,leaks))
+        # prMat=np.zeros((leaks,leaks))
         for i in range(leaks):  #计算个体适应度值
             temp=selectSenMat[:,i]
             # 单位化,为了计算方便不用在分母处除模
             unitTemp1= temp/np.linalg.norm(temp)
-            # if(i==leaks-1): #当在最后那列时不能继续再算
-            #     break
-            for j in range(i,leaks):
+            if(i==leaks-1): #当在最后那列时不能继续再算
+                break
+            for j in range(i+1,leaks):
                 temp2=selectSenMat[:,j]
                 unitTemp2=temp2/np.linalg.norm(temp2)
                 dotProduct=unitTemp1.dot(unitTemp2)
-                prMat[i][j]=dotProduct
-                prMat[j][i] =dotProduct
-                if(i!=j):
-                    result=result+dotProduct
+                # prMat[i][j]=dotProduct
+                # prMat[j][i] =dotProduct
+                # if(i!=j):
+                result=result+dotProduct
         value=2*result/(leaks * (leaks - 1))
         # 根据距离矩阵和相似度字典求距离更改适应度
-        similarDir={i:[] for i in range(leaks)}
-        for i in range(leaks):
-            for j in range(i,leaks):
-                if(prMat[i][j]>value and i!=j):
-                    similarDir[i].append(j)
-                    similarDir[j].append(i)
-        disSum=0
-        for i in range(leaks):
-            tempDisMax=0
-            for j in similarDir[i]:
-                if(disMat[i][j]>tempDisMax):
-                    tempDisMax=disMat[i][j]
-            disSum=disSum+tempDisMax
-        avlDis=disSum/(leaks)
-        fitness.update({chromosome_index:avlDis})
+        # similarDir={i:[] for i in range(leaks)}
+        # for i in range(leaks):
+        #     for j in range(i,leaks):
+        #         if(prMat[i][j]>value and i!=j):
+        #             similarDir[i].append(j)
+        #             similarDir[j].append(i)
+        # disSum=0
+        # for i in range(leaks):
+        #     tempDisMax=0
+        #     for j in similarDir[i]:
+        #         if(disMat[i][j]>tempDisMax):
+        #             tempDisMax=disMat[i][j]
+        #     disSum=disSum+tempDisMax
+        # avlDis=disSum/(leaks)
+        fitness.update({chromosome_index:value})
         chromosome_index=chromosome_index+1
     fitness = sorted(fitness.items(), key=lambda item: item[1])
     new_fitness={}

@@ -109,8 +109,8 @@ class ga:
 
 
 if __name__=="__main__":                                                                                                                                                             
-    g=ga(100,50,0.6,0.1,100,"D:/科研/code/sensorLayout/result/CTOWN.INP")
-    unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/CTOWN.csv")
+    g=ga(100,50,0.6,0.1,200,"D:/科研/code/sensorLayout/result/Net3.INP")
+    unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
     g.run(unitMat)
 
 

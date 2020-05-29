@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Main/GA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/GA/cross.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/GA/mutation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/GA/selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/CTOWN.INP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/individual.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/individual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/population.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/start.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/calDistance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Net3DisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/Net3DisDic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/Mat.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/Mat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/readAndDraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/readAndDraw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/testLeakSimilarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/testLeakSimilarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/GA/calFiteness.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/GA/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +65,7 @@
       <recent name="D:\科研\code\sensorLayout" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Mat">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,9 +202,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.Mat" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.calDistance" />
         <item itemvalue="Python.readAndDraw" />
       </list>
@@ -369,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590285598062</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="change2">
+      <created>1590722387607</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1590722387607</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -410,6 +400,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -431,7 +426,9 @@
     <MESSAGE value="把启动模块main里面的多个方法提取为函数，减少文件长度" />
     <MESSAGE value="数据改为ky8" />
     <MESSAGE value="1.0版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0版本" />
+    <MESSAGE value="change" />
+    <MESSAGE value="change2" />
+    <option name="LAST_COMMIT_MESSAGE" value="change2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590241071495">
@@ -450,10 +447,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590722356578">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590722415538">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590722356578" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590722415538" />
     <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590297470362">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -478,22 +475,22 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="111" key="GridCell.Tab.0.bottom" timestamp="1590719967373">
+    <state width="1259" height="151" key="GridCell.Tab.0.bottom" timestamp="1590722996482">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="111" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
-    <state width="1259" height="111" key="GridCell.Tab.0.center" timestamp="1590719967373">
+    <state width="1259" height="151" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
+    <state width="1259" height="151" key="GridCell.Tab.0.center" timestamp="1590722996482">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="111" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
-    <state width="1259" height="111" key="GridCell.Tab.0.left" timestamp="1590719967372">
+    <state width="1259" height="151" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
+    <state width="1259" height="151" key="GridCell.Tab.0.left" timestamp="1590722996482">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="111" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590719967372" />
-    <state width="1259" height="111" key="GridCell.Tab.0.right" timestamp="1590719967373">
+    <state width="1259" height="151" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
+    <state width="1259" height="151" key="GridCell.Tab.0.right" timestamp="1590722996482">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="111" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590719967373" />
+    <state width="1259" height="151" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
     <state width="1259" height="251" key="GridCell.Tab.1.bottom" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
