@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="效果很好，平均互相干系数，Net3数据，">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/calFiteness.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/GA/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -359,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590722387607</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="效果很好，平均互相干系数，Net3数据">
+      <created>1590725516435</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590725516435</updated>
+    </task>
+    <task id="LOCAL-00020" summary="结果数据">
+      <created>1590729427241</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590729427241</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -402,7 +415,9 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -428,7 +443,9 @@
     <MESSAGE value="1.0版本" />
     <MESSAGE value="change" />
     <MESSAGE value="change2" />
-    <option name="LAST_COMMIT_MESSAGE" value="change2" />
+    <MESSAGE value="效果很好，平均互相干系数，Net3数据" />
+    <MESSAGE value="结果数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="结果数据" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590241071495">
@@ -447,10 +464,10 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590722415538">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590729662894">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590722415538" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590729662894" />
     <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590297470362">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -475,22 +492,22 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="151" key="GridCell.Tab.0.bottom" timestamp="1590722996482">
+    <state width="1259" height="277" key="GridCell.Tab.0.bottom" timestamp="1590837790547">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="151" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
-    <state width="1259" height="151" key="GridCell.Tab.0.center" timestamp="1590722996482">
+    <state width="1259" height="277" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590837790547" />
+    <state width="1259" height="277" key="GridCell.Tab.0.center" timestamp="1590837790546">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="151" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
-    <state width="1259" height="151" key="GridCell.Tab.0.left" timestamp="1590722996482">
+    <state width="1259" height="277" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
+    <state width="1259" height="277" key="GridCell.Tab.0.left" timestamp="1590837790546">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="151" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
-    <state width="1259" height="151" key="GridCell.Tab.0.right" timestamp="1590722996482">
+    <state width="1259" height="277" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
+    <state width="1259" height="277" key="GridCell.Tab.0.right" timestamp="1590837790546">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state width="1259" height="151" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590722996482" />
+    <state width="1259" height="277" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
     <state width="1259" height="251" key="GridCell.Tab.1.bottom" timestamp="1590328533585">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -515,26 +532,26 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1590145581510" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590235346807">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590729440315">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590235346807" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590729440315" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1590243568224">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590243568224" />
-    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590285970095">
+    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590837885581">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.40.1280.680@0.40.1280.680" timestamp="1590285970095" />
+    <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.40.1280.680@0.40.1280.680" timestamp="1590837885581" />
     <state x="437" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590144854461">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="437" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1280.680@0.40.1280.680" timestamp="1590144854461" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1589024961455">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1590819824127">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.40.1280.680@0.40.1280.680" timestamp="1589024961455" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.40.1280.680@0.40.1280.680" timestamp="1590819824127" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

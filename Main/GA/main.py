@@ -79,7 +79,8 @@ class ga:
                 Pops.append(parents_childs[key])
                 index=index+1
             end = time.clock()
-            print(end-start)
+            print("第%s代"%i,"耗时：",end-start,"秒")
+
 
         self.resultPlot()
 
@@ -109,8 +110,8 @@ class ga:
 
 
 if __name__=="__main__":                                                                                                                                                             
-    g=ga(100,50,0.6,0.1,200,"D:/科研/code/sensorLayout/result/Net3.INP")
-    unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/Net3.csv")
+    g=ga(100,50,0.6,0.2,120,"D:/科研/code/sensorLayout/result/CTOWN.INP")
+    unitMat=loadSensitiveMat("D:/科研/code/sensorLayout/result/CTOWN.csv")
     g.run(unitMat)
 
 
