@@ -6,6 +6,8 @@ import csv
 from mpl_toolkits.mplot3d import Axes3D
 """
 该模块是获得敏感度矩阵和将来获取需求影响矩阵，并保存数据到文件
+1GPM=0.063L/s
+1L/s=15.85GPM
 """
 class Data:
     def __init__(self,exePath:str,writeFile:str,inp:str,rpt:str,leakFlow:float):
@@ -24,6 +26,7 @@ class Data:
         self.pressure_at_0hr=None #正常压力向量0h，单位强制转为PSI
         self.SensitiveMat=None
         self.__pressureResidual=None
+        self.demandFluMat=None
 
 
 
@@ -125,7 +128,7 @@ class Data:
         """
         self.__getSensitiveMat()
         origiName = os.path.split(os.path.realpath(self.rpt))[1].split(".")[0]
-        SensitiveFileName="D:/科研/code/sensorLayout/result/%s.csv"%origiName
+        SensitiveFileName="D:/科研/code/sensorLayout/result/%ssensitive.csv"%origiName
         np.savetxt(SensitiveFileName, self.SensitiveMat, delimiter=',')
     # def loadSensitiveMat(self,SensitiveFileName):
     #     """
@@ -143,11 +146,38 @@ class Data:
     #     # 单位化
     #     unitMat=np.array([row/np.linalg.norm(row) for row in nomarMat])
     #     return unitMat
-    def saveDemandFluMat(self):
+    def saveDemandFMAndPressRe(self):
         """
             得到泄漏影响矩阵
         """
-        pass
+        self.__getSensitiveMat()
+        # 原始的泄漏影响矩阵
+        pressureChangeValue = np.zeros(shape=(len(self.pressureAllNodeLeak), len(self.pressureAllNodeLeak[0])))
+        for i in range(len(self.pressureAllNodeLeak)):
+            for j in range(len(self.pressureAllNodeLeak[i])):
+                if (self.pressureAllNodeLeak[i][i] - self.pressure_at_0hr[i] != 0):
+                    pressureChangeValue[i][j] = (abs(self.pressureAllNodeLeak[i][j] - self.pressure_at_0hr[j]))/(abs(self.pressureAllNodeLeak[i][i] - self.pressure_at_0hr[i]))
+        self.demandFluMat= np.zeros(shape=(len(self.pressureAllNodeLeak), len(self.pressureAllNodeLeak[0])))
+
+        #标准化
+        for i in range(len(self.pressureAllNodeLeak)):
+            maxValue=np.max(pressureChangeValue[i])
+            minValue=np.min(pressureChangeValue[i])
+
+            for j in range(len(self.pressureAllNodeLeak[i])):
+                if ( maxValue-minValue!= 0):
+                    self.demandFluMat[i][j] = (pressureChangeValue[i][j] - minValue)/(maxValue-minValue)
+        origiName = os.path.split(os.path.realpath(self.rpt))[1].split(".")[0]
+        SensitiveFileName = "D:/科研/code/sensorLayout/result/%sdemandFluMat.csv" % origiName
+        np.savetxt(SensitiveFileName, self.demandFluMat, delimiter=',')
+
+        # 保存压力残差矩阵
+        pressureResidualName = "D:/科研/code/sensorLayout/result/%spressureResidualMat.csv" % origiName
+        np.savetxt(pressureResidualName, self.__pressureResidual, delimiter=',')
+
+
+
+
     # def drawSenPic(self):
     #     """
     #       以三维的形式画出敏感度矩阵
@@ -178,36 +208,17 @@ class Data:
     #     plt.show()
 if __name__=="__main__":
     exePath = "D:/project/Cpp/EpanetSimulation/Debug/EpanetSimulation.exe"
-    writePFN = "D:/project/Cpp/result/CTOWNpressure.txt"
-    inp = "D:/project/Cpp/data/CTOWN.INP"
-    rpt = "D:/project/Cpp/result/CTOWN.rpt"
-    leakFlow = 6.3
-    leakNodeIndex = 10
+    writePFN = "D:/project/Cpp/result/Net3pressure.txt"
+    inp = "D:/project/Cpp/data/Net3.INP"
+    rpt = "D:/project/Cpp/result/Net3.rpt"
+    #生成敏感度是总需水量的2%--16.6L/s，残差向量是3%--24.8L/s
+    leakFlow = 24.8   #L/s
+    # leakNodeIndex = 10
     data=Data(exePath,writePFN,inp,rpt,leakFlow)
     data.saveSensitiveMat()
+    data.saveDemandFMAndPressRe()
 
-    # data.simLeakSingle(leakNodeIndex)
-    # data.readPressureLeak()
-    # data.simulationNormal()
-    # data.simLeakAll()
-    # data.getSensitiveMat()
-    # data.saveSensitiveMat()
-    # data.saveSensitiveMat()
-    # data.loadSensitiveMat()
-    # data.loadSensitiveMat("result/Net3SM.csv")
-    # data.drawSenPic()
-    # a=np.array([1,2,3,4])
-    # b=np.array([2.2,6,0,1])
-    # a=a/a.max()
-    # b=b/b.max()
-    # c=np.linalg.norm(a)
-    # d= np.linalg.norm(b)
-    # e=a/c
-    # f=b/d
-    # print(e)
-    # print(f)
-    # print(a.dot(b)/(c*d))
-    # print(e.dot(f))
+
 
 
 

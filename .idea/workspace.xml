@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="效果很好，平均互相干系数，Net3数据，">
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/GA/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/tools/calDistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/calDistance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/Mat.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/Mat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/readAndDraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/readAndDraw.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sensorLayout" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,22 +57,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/result" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_importance" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\node_importance" />
+      <recent name="D:\科研\code\sensorLayout\Main\GA" />
+      <recent name="D:\科研\code\sensorLayout\result" />
+      <recent name="D:\科研\code\sensorLayout\Main1\tools" />
+      <recent name="D:\科研\code\sensorLayout\Main1\GA" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\科研\code\sensorLayout\main\tools" />
       <recent name="D:\科研\code\sensorLayout\Data" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\科研\code\sensorLayout\result" />
-      <recent name="D:\科研\code\sensorLayout\Main1\tools" />
-      <recent name="D:\科研\code\sensorLayout\Main1\GA" />
-      <recent name="D:\科研\code\sensorLayout" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.calDistance">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,7 +158,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="readAndDraw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/NSGA2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/NSGA2/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testLeakSimilarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,28 +191,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/readAndDraw.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/GA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/GA/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/testLeakSimilarity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,18 +203,18 @@
     <list>
       <item itemvalue="Python.Data (1)" />
       <item itemvalue="Python.Mat" />
-      <item itemvalue="Python.readAndDraw" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.testLeakSimilarity" />
+      <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.calDistance" />
-      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.Mat" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.calDistance" />
-        <item itemvalue="Python.readAndDraw" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.Mat" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.testLeakSimilarity" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590729427241</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="效果很行，平均互相干系数，C-town数据，">
+      <created>1590838097268</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590838097268</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -445,41 +461,48 @@
     <MESSAGE value="change2" />
     <MESSAGE value="效果很好，平均互相干系数，Net3数据" />
     <MESSAGE value="结果数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="结果数据" />
+    <MESSAGE value="效果很行，平均互相干系数，C-town数据，" />
+    <option name="LAST_COMMIT_MESSAGE" value="效果很行，平均互相干系数，C-town数据，" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590241071495">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1280.680@0.40.1280.680" timestamp="1590241071495" />
+    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590853591854">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1280.680@0.40.1280.680" timestamp="1590853591854" />
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser/0.40.1280.680@0.40.1280.680" timestamp="1588841324536" />
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589475718550">
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590886308184">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1589475718550" />
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1590886308184" />
     <state x="351" y="40" key="#start" timestamp="1590027300374">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="351" y="40" key="#start/0.40.1280.680@0.40.1280.680" timestamp="1590027300374" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590729662894">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1590838096446">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590729662894" />
-    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1590297470362">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1590838096446" />
+    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1592033588385">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1590297470362" />
+    <state width="1190" height="384" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1592033588385" />
+    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1591885326474" />
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog" timestamp="1590283653246">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog/0.40.1280.680@0.40.1280.680" timestamp="1590283653246" />
-    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1590226801283">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1592035138937">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1590226801283" />
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592035138937" />
+    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1591669072803" />
     <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog" timestamp="1589383190263">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -492,38 +515,46 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="277" key="GridCell.Tab.0.bottom" timestamp="1590837790547">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1592034961015">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="277" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590837790547" />
-    <state width="1259" height="277" key="GridCell.Tab.0.center" timestamp="1590837790546">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592034961015" />
+    <state width="1259" height="40" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1592034961015">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="277" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
-    <state width="1259" height="277" key="GridCell.Tab.0.left" timestamp="1590837790546">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592034961015" />
+    <state width="1259" height="40" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1592034961014">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="277" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
-    <state width="1259" height="277" key="GridCell.Tab.0.right" timestamp="1590837790546">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592034961014" />
+    <state width="1259" height="40" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1592034961015">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="277" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1590837790546" />
-    <state width="1259" height="251" key="GridCell.Tab.1.bottom" timestamp="1590328533585">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592034961015" />
+    <state width="1259" height="40" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="19" key="GridCell.Tab.1.bottom" timestamp="1592033897675">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
-    <state width="1259" height="251" key="GridCell.Tab.1.center" timestamp="1590328533585">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="19" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592033897675" />
+    <state width="1259" height="40" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="19" key="GridCell.Tab.1.center" timestamp="1592033897674">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
-    <state width="1259" height="251" key="GridCell.Tab.1.left" timestamp="1590328533585">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="19" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592033897674" />
+    <state width="1259" height="40" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="19" key="GridCell.Tab.1.left" timestamp="1592033897673">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
-    <state width="1259" height="251" key="GridCell.Tab.1.right" timestamp="1590328533585">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state width="1259" height="19" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592033897673" />
+    <state width="1259" height="40" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
+    <state width="1259" height="19" key="GridCell.Tab.1.right" timestamp="1592033897675">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1590328533585" />
+    <state width="1259" height="19" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592033897675" />
+    <state width="1259" height="40" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1591885878575" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1590282955958">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -532,14 +563,15 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1590145581510" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590729440315">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1590838117916">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590729440315" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1590243568224">
-      <screen x="0" y="40" width="1280" height="680" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1590838117916" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1592032357750">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1590243568224" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1592032357750" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1591202250838" />
     <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590837885581">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -557,9 +589,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main/GA/test.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="102" />
+          <url>file://$USER_HOME$/Anaconda3/Lib/site-packages/libsvm/python/commonutil.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main/GA/calFiteness.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

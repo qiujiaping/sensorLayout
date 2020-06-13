@@ -2,6 +2,7 @@ import wntr
 import numpy as np
 import json
 import os
+import networkx as nx
 
 """
 该模块是计算节点距离
@@ -37,8 +38,30 @@ def distance(inp):
     # return nodeDisDic,disMat
     return disMat
 
+def topo_distance(inp):
+    wn = wntr.network.WaterNetworkModel(inp)
+    nodeID=wn.junction_name_list
+    nodeIdIndex = {}
+    for i in range(len(nodeID)):
+        nodeIdIndex.update({nodeID[i]: i})
+    row=wn.num_junctions
+    G = wn.get_graph()
+    sG = nx.Graph(G)
+    p = dict(nx.shortest_path_length(sG))
+    topo_distance=np.zeros(shape=(row,row))
+    row=0
+    for key1 in nodeID:
+        column=0
+        for key2 in nodeID:
+            topo_distance[row][column]=p.get(key1).get(key2)
+            column = column+1
+        row=row+1
+    origiName = os.path.split(os.path.realpath(inp))[1].split(".")[0]
+    topo_distanceFileName = "D:/科研/code/sensorLayout/result/%stopo_distanceMat.csv" % origiName
+    np.savetxt(topo_distanceFileName,topo_distance, delimiter=',')
+    return topo_distance
 
 
 if __name__=="__main__":
-    inp = "D:/project/Cpp/data/ky8.inp"
-    distance(inp)
+    inp = "D:/project/Cpp/data/Net3.inp"
+    topo_distance(inp)

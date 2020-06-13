@@ -4,7 +4,7 @@ import csv
 from mpl_toolkits.mplot3d import Axes3D
 from simulation.Mat import Data
 
-def loadSensitiveMat(SensitiveFileName)->np.ndarray:
+def loadSensitiveMat(SensitiveFileName)-> object:
     """
     从生成的结果文件当中获得原始敏感矩阵
     且对敏感矩阵->规范化->单位化
@@ -19,6 +19,34 @@ def loadSensitiveMat(SensitiveFileName)->np.ndarray:
     unitMat = np.array([row / np.linalg.norm(row) for row in sensitiveMat])
     return unitMat
 
+
+def loadDemandFluMat(DemandFluMatName)->np.ndarray:
+
+    """
+    从生成的结果文件当中获得标准的泄漏影响矩阵
+    且对敏感矩阵->规范化->单位化
+    """
+    with open(DemandFluMatName, 'r') as f:
+        reader = csv.reader(f)
+        DemandFluMat = []
+        for row in reader:
+            DemandFluMat.append(list(map(float, row)))
+    DemandFluMat = np.array(DemandFluMat)
+    return DemandFluMat
+
+def loadPressureResidualMat(pressureResidualMatName)->np.ndarray:
+
+    """
+    从生成的结果文件当中获得标准的泄漏影响矩阵
+    且对敏感矩阵->规范化->单位化
+    """
+    with open(pressureResidualMatName, 'r') as f:
+        reader = csv.reader(f)
+        pressureResidualMat = []
+        for row in reader:
+            pressureResidualMat.append(list(map(float, row)))
+    pressureResidualMat = np.array(pressureResidualMat)
+    return pressureResidualMat
 
 def drawSenPic(data):
     """
