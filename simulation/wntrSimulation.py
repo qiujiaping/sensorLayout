@@ -41,7 +41,7 @@ class HydraulicSimulation:
         nor_pressureAt0h = np.array(results.node['pressure'].loc[0 * 3600, :])
         return nor_pressureAt0h
 
-    def simLeakAll(self,leakFlow,is_save=True,save_path=r"D:\科研\code\sensorLayout\result"):
+    def simLeakAll(self,leakFlow,is_save=False,save_path=r"D:\科研\code\sensorLayout\result"):
         pressureResidual=[]
         leak = wntr.epanet.util.to_si(wntr.epanet.util.FlowUnits.LPS, leakFlow,
                                            wntr.epanet.util.HydParam.Demand)  # 从L/s转到m³/s
@@ -59,13 +59,38 @@ class HydraulicSimulation:
             diff = wntr.epanet.util.from_si(wntr.epanet.util.FlowUnits.GPM, diff, wntr.epanet.util.HydParam.Pressure)
             pressureResidual.append(diff)
             if(is_save==True):
-                origiName = os.path.split(os.path.realpath(inp_file))[1].split(".")[0]
+                origiName = os.path.split(os.path.realpath(self.inp_file))[1].split(".")[0]
                 pressureResidualFileName = save_path+"/%s/"%origiName+"pr.csv"
                 np.savetxt(pressureResidualFileName, pressureResidual, delimiter=',')
             os.remove("temp.bin")
             os.remove("temp.inp")
             os.remove("temp.rpt")
         return np.array(pressureResidual)
+
+    def getDemandFM(self,flowChage,is_save=False,save_path=r"D:\科研\code\sensorLayout\result"):
+        pressureResidual=self.simLeakAll(flowChage,is_save=False)
+        rows=pressureResidual.shape[0]
+        columns=pressureResidual.shape[1]
+        pressureFM= np.zeros(shape=(rows,columns))
+        for row in range(rows):
+            for column in range(columns):
+                if (pressureResidual[row][row]!= 0):
+                    pressureFM[row][column] = abs(pressureResidual[row][column]/pressureResidual[row][row])
+
+        demandFluMat =np.zeros(shape=(rows,columns))
+        # 标准化
+        for row in range(rows):
+            maxValue = np.max(pressureFM[row])
+            minValue = np.min(pressureFM[row])
+            for column in range(columns):
+                if (maxValue - minValue != 0):
+                    demandFluMat[row][column] = (pressureFM[row][column] - minValue) / (maxValue - minValue)
+        if (is_save == True):
+            origiName = os.path.split(os.path.realpath(self.inp_file))[1].split(".")[0]
+            demandFluMatFileName = save_path + "/%s/" % origiName + "dFM.csv"
+            np.savetxt(demandFluMatFileName, demandFluMat, delimiter=',')
+
+
     # # <FlowUnits.GPM: (1, 6.30901964e-05)>
     # inp_file =r'Net3.inp'
     # a=[]
@@ -127,9 +152,8 @@ class HydraulicSimulation:
 
 if __name__=="__main__":
     inp_file=r"data\Net3.inp"
-
     hs=HydraulicSimulation(inp_file)
-    pressureResidual=hs.simLeakAll(16.6,is_save=True)
+    # hs.simLeakAll(16.6,is_save=True)
+    hs.getDemandFM(6.7)
 
-    print()
 

@@ -7,7 +7,7 @@ import wntr
 import matplotlib.pyplot as plt
 import time
 import random
-from Main.tools import calDistance
+from Main.tools import disAndNodeDir
 from copy import copy
 from Main.GA.cross import cross
 from Main.GA.selection import selection
@@ -44,7 +44,7 @@ class ga:
         for i in range(len(nodeID)):
             self.nodeIdIndex.update({nodeID[i]:i})
         self.nodeIndexList = list(range(len(nodeID)))  # 节点id范围
-        self.disMat=calDistance.distance(self.inp)
+        self.disMat=disAndNodeDir.distance(self.inp)
 
     """
         ga算法的启动函数

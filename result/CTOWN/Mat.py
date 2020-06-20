@@ -4,10 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 from mpl_toolkits.mplot3d import Axes3D
+
 """
-该模块是获得敏感度矩阵和将来获取需求影响矩阵，并保存数据到文件
-1GPM=0.063L/s
-1L/s=15.85GPM
+    该模块是通过调用C++代码获得敏感度矩阵和将来获取需求影响矩阵，并保存数据到文件
+    包括模拟和数据的处理
+        1GPM=0.063L/s
+        1L/s=15.85GPM
+        1m³/s=1000L/s
 """
 class Data:
     def __init__(self,exePath:str,writeFile:str,inp:str,rpt:str,leakFlow:float):
@@ -17,7 +20,7 @@ class Data:
         self.rpt = rpt
         wn = wntr.network.WaterNetworkModel(self.inp)
         self.wn = wn
-        print(wn.options.hydraulic.en2_units)
+        # print(wn.options.hydraulic.en2_units)
         if(wn.options.hydraulic.en2_units=='GPM'):
             self.leakFlow=leakFlow/0.063 #输入考虑L/S，如果inp文件是GPM，实例初始化转换为GPM
         else:
@@ -71,7 +74,7 @@ class Data:
 
             #泄漏完整延时压力数据
             pressureAllTime=np.array(pressureAllTime)
-        # print(pressureAllTime[0])
+        # temp=pressureAllTime[0]
         return pressureAllTime[0]
 
 
@@ -212,11 +215,12 @@ if __name__=="__main__":
     inp = "D:/project/Cpp/data/Net3.INP"
     rpt = "D:/project/Cpp/result/Net3.rpt"
     #生成敏感度是总需水量的2%--16.6L/s，残差向量是3%--24.8L/s
-    leakFlow = 24.8   #L/s
-    # leakNodeIndex = 10
-    data=Data(exePath,writePFN,inp,rpt,leakFlow)
-    data.saveSensitiveMat()
-    data.saveDemandFMAndPressRe()
+    # leakFlow = 16.6   #L/s
+    # # leakNodeIndex = 10
+    # data=Data(exePath,writePFN,inp,rpt,leakFlow)
+    #
+    # data.saveSensitiveMat()
+    # data.saveDemandFMAndPressRe()
 
 
 

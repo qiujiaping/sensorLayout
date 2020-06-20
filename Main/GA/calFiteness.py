@@ -25,7 +25,7 @@ def calFiteness(Pops,disMat,senMat:np.ndarray):
         selectSenMat=np.array(selectSenMat)
         result=0
         # prMat=np.zeros((leaks,leaks))
-        for i in range(leaks):  #计算个体适应度值
+        for i in range(leaks):  #计算个体适应度值,这里有bug,可能np.linalg.norm(temp)=0
             temp=selectSenMat[:,i]
             # 单位化,为了计算方便不用在分母处除模
             unitTemp1= temp/np.linalg.norm(temp)

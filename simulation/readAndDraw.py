@@ -1,22 +1,39 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
-from mpl_toolkits.mplot3d import Axes3D
-from simulation.Mat import Data
+
 
 def loadSensitiveMat(SensitiveFileName)-> object:
     """
     从生成的结果文件当中获得原始敏感矩阵
     且对敏感矩阵->规范化->单位化
     """
+    # with open(SensitiveFileName, 'r') as f:
+    #     reader = csv.reader(f)
+    #     sensitiveMat = []
+    #     for row in reader:
+    #         sensitiveMat.append(list(map(float, row)))
+    # sensitiveMat = np.array(sensitiveMat)
+    # # 单位化
+    # unitMat=[]
+    # for row in sensitiveMat:
+    #     if(np.linalg.norm(row)==0):
+    #         unitMat.append(row)
+    #     else:
+    #         unitMat.append(np.array(row / np.linalg.norm(row)))
+    # unitMat=np.array(unitMat)
+
     with open(SensitiveFileName, 'r') as f:
         reader = csv.reader(f)
-        sensitiveMat = []
+        unitMat = []
         for row in reader:
-            sensitiveMat.append(list(map(float, row)))
-    sensitiveMat = np.array(sensitiveMat)
-    # 单位化
-    unitMat = np.array([row / np.linalg.norm(row) for row in sensitiveMat])
+            row = list(map(float, row))
+            if (np.linalg.norm(row) == 0):
+                unitMat.append(row)
+            else:
+                row = row / np.linalg.norm(row)
+                unitMat.append(list(map(float, row)))
+        unitMat = np.array(unitMat)
     return unitMat
 
 
@@ -85,5 +102,5 @@ if __name__=="__main__":
     # leakNodeIndex = 10
     # data = Data(exePath, writePFN, inp, rpt, leakFlow)
     # data.saveSensitiveMat()
-    mat=loadSensitiveMat("D:/科研/code/sensorLayout/result/ky8.csv")
-    # drawSenPic(mat)
+    mat=loadSensitiveMat("D:/科研/code/sensorLayout/result/ky8/ky8.csv")
+    drawSenPic(mat)
