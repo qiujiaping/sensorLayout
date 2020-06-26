@@ -67,10 +67,10 @@ class distance_nodeDir:
     def get_nodeIndexId(self):
         wn = wntr.network.WaterNetworkModel(self.inp)
         nodeID = wn.junction_name_list
-        nodeIdIndex = {}
+        nodeIndexId = {}
         for i in range(len(nodeID)):
-            nodeIdIndex.update({i: nodeID[i]})
-        return nodeIdIndex
+            nodeIndexId.update({i: nodeID[i]})
+        return nodeIndexId
 
 
 if __name__=="__main__":

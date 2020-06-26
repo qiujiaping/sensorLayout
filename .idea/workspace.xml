@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="脱离epanet模拟，仅使用wntr模拟泄漏">
-      <change afterPath="$PROJECT_DIR$/Main/NSGA2/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/tools/disAndNodeDir.py" afterDir="false" />
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="双目标函数定义完成，都是最大化">
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/crossover.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/crowddist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/dominance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/dominanceMain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/mutation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/rank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/NSGA2/selection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/calFiteness.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/calFiteness.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/GA/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/GA/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/tools/calDistance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/CTOWN.INP" beforeDir="false" afterPath="$PROJECT_DIR$/result/CTOWN/CTOWN.INP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/CTOWN.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/CTOWN/CTOWN.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/CTOWNDisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/CTOWN/CTOWNDisDic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Net3DisDic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/ky8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/ky8/ky8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/ky8.inp" beforeDir="false" afterPath="$PROJECT_DIR$/result/ky8/ky8.inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/ky8DisDic.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/ky8/ky8DisDic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/Mat.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/CTOWN/Mat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/readAndDraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/readAndDraw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/wntrSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/wntrSimulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/NSGA2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/NSGA2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/tools/disAndNodeDir.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/disAndNodeDir.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +79,7 @@
       <recent name="D:\科研\code\sensorLayout\Main\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.funUserDefine">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,27 +93,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:\科研\code\sensorLayout\Data\getMat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="calCoverRelation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/calCoverRelation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,6 +122,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="crossover" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/NSGA2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/NSGA2/crossover.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="funUserDefine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,7 +164,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="readAndDraw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,11 +172,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/NSGA2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/readAndDraw.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/NSGA2/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wntrSimulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mutation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,11 +193,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/NSGA2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/wntrSimulation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/NSGA2/mutation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,19 +208,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Data (1)" />
-      <item itemvalue="Python.wntrSimulation" />
-      <item itemvalue="Python.calCoverRelation" />
-      <item itemvalue="Python.funUserDefine" />
-      <item itemvalue="Python.readAndDraw" />
       <item itemvalue="Python.calDistance" />
+      <item itemvalue="Python.funUserDefine" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.crossover" />
+      <item itemvalue="Python.mutation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.mutation" />
+        <item itemvalue="Python.crossover" />
         <item itemvalue="Python.funUserDefine" />
         <item itemvalue="Python.calDistance" />
-        <item itemvalue="Python.readAndDraw" />
-        <item itemvalue="Python.calCoverRelation" />
-        <item itemvalue="Python.wntrSimulation" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592449056771</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="双目标函数定义完成，都是最大化">
+      <created>1592660548259</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1592660548259</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -490,9 +491,14 @@
     <MESSAGE value="效果很行，平均互相干系数，C-town数据，" />
     <MESSAGE value="生成残差矩阵+生成拓扑距离在NSGA2目录下测试了计算敏感度矩阵时的阶段距离-》结果预先保存在result目录下" />
     <MESSAGE value="脱离epanet模拟，仅使用wntr模拟泄漏" />
-    <option name="LAST_COMMIT_MESSAGE" value="脱离epanet模拟，仅使用wntr模拟泄漏" />
+    <MESSAGE value="双目标函数定义完成，都是最大化" />
+    <option name="LAST_COMMIT_MESSAGE" value="双目标函数定义完成，都是最大化" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="38" key="#Notifications" timestamp="1592660592569">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="0" y="38" key="#Notifications/0.40.1280.680@0.40.1280.680" timestamp="1592660592568" />
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590241071495">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -521,16 +527,16 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="121" y="81" width="953" height="598" key="#xdebugger.evaluate/0.40.1280.680@0.40.1280.680" timestamp="1592575559310" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1592449056101">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1592664158076">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592036463215" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1592449056101" />
-    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1592660212633">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1592664158076" />
+    <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1593163123865">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1190" height="384" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1592033588385" />
-    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1592660212633" />
+    <state width="1190" height="384" key="DebuggerActiveHint/0.40.1280.680@0.40.1280.680" timestamp="1593163123865" />
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog" timestamp="1592576692004">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -552,46 +558,46 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="219" key="GridCell.Tab.0.bottom" timestamp="1592660299142">
+    <state width="1259" height="326" key="GridCell.Tab.0.bottom" timestamp="1593162907575">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592068264392" />
-    <state width="1259" height="219" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1592660299142" />
-    <state width="1259" height="219" key="GridCell.Tab.0.center" timestamp="1592660299142">
+    <state width="1259" height="326" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593162907575" />
+    <state width="1259" height="326" key="GridCell.Tab.0.center" timestamp="1593162907574">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="219" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1592660299142" />
-    <state width="1259" height="219" key="GridCell.Tab.0.left" timestamp="1592660299142">
+    <state width="1259" height="326" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1593162907574" />
+    <state width="1259" height="326" key="GridCell.Tab.0.left" timestamp="1593162907574">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="219" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1592660299142" />
-    <state width="1259" height="219" key="GridCell.Tab.0.right" timestamp="1592660299142">
+    <state width="1259" height="326" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1593162907574" />
+    <state width="1259" height="326" key="GridCell.Tab.0.right" timestamp="1593162907575">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="219" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1592660299142" />
-    <state width="1259" height="303" key="GridCell.Tab.1.bottom" timestamp="1592660288625">
+    <state width="1259" height="326" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1593162907575" />
+    <state width="1259" height="191" key="GridCell.Tab.1.bottom" timestamp="1593162756486">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="303" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1592660288625" />
-    <state width="1259" height="303" key="GridCell.Tab.1.center" timestamp="1592660288625">
+    <state width="1259" height="191" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593162756486" />
+    <state width="1259" height="191" key="GridCell.Tab.1.center" timestamp="1593162756486">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="303" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1592660288625" />
-    <state width="1259" height="303" key="GridCell.Tab.1.left" timestamp="1592660288625">
+    <state width="1259" height="191" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1593162756486" />
+    <state width="1259" height="191" key="GridCell.Tab.1.left" timestamp="1593162756486">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="303" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1592660288625" />
-    <state width="1259" height="303" key="GridCell.Tab.1.right" timestamp="1592660288625">
+    <state width="1259" height="191" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1593162756486" />
+    <state width="1259" height="191" key="GridCell.Tab.1.right" timestamp="1593162756486">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="303" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1592660288625" />
+    <state width="1259" height="191" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1593162756486" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1590282955958">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -600,16 +606,16 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1592318143912" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1592449091261">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1592660568870">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1592036474396" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1592449091261" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1592637490594">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1592660568870" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1592839385104">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1592032357750" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1592637490594" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.40.1280.680@0.40.1280.680" timestamp="1592839385104" />
     <state x="49" y="147" width="1095" height="483" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590837885581">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -653,8 +659,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Main/function/funUserDefine.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="271" />
+          <line>130</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main/NSGA2/main.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="283" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
