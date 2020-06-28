@@ -62,6 +62,7 @@ class distance_nodeDir:
             origiName = os.path.split(os.path.realpath(self.inp))[1].split(".")[0]
             topo_distanceFileName = save_path+"/%s"%origiName+"/%stopo_distanceMat.csv"%origiName
             np.savetxt(topo_distanceFileName,topo_distance, delimiter=',')
+        a=topo_distance.max()
         return topo_distance
 
     def get_nodeIndexId(self):
@@ -74,10 +75,11 @@ class distance_nodeDir:
 
 
 if __name__=="__main__":
-    inp = "D:/project/Cpp/data/Net3.inp"
+    # inp = "D:/project/Cpp/data/Net3.inp"
+    inp = r"D:\科研\code\sensorLayout\simulation\data\ky2.inp"
     dn=distance_nodeDir(inp)
-    # dis.geo_distance(is_save=True)
-    # dis.topo_distance(is_save=True)
-    print(dn.get_nodeIndexId())
+    # dn.geo_distance(is_save=True)
+    dn.topo_distance(is_save=True)
+    # print(dn.get_nodeIndexId())
 
 

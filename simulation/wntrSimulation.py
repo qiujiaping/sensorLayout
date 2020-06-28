@@ -151,9 +151,9 @@ class HydraulicSimulation:
     # print(pr)
 
 if __name__=="__main__":
-    inp_file=r"data\Net3.inp"
+    inp_file=r"data\ky2.inp"
     hs=HydraulicSimulation(inp_file)
     # hs.simLeakAll(16.6,is_save=True)
-    hs.getDemandFM(6.7)
+    hs.getDemandFM(6.7,is_save=True)
 
 

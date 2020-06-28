@@ -48,14 +48,14 @@ def dominanceMain(population, func_object):
             indicate.extend(temp[:nN-s])
             break
 
-    for i in range(len(layer_dict)):     # i从零开始 需要+1
-        #print(layerDict[i+1])
-        ceng_population = array(population[layer_dict[i+1]])
-        N = ceng_population.shape[0]
-        n = len(array(list(set([tuple(t) for t in ceng_population]))))
-        print("第 ", i, "层的重复率:", n/N, "--该层个体数量:", N, "--不重复个体数量:", n)
-
-    print(len(indicate))
+    # for i in range(len(layer_dict)):     # i从零开始 需要+1
+    #     #print(layerDict[i+1])
+    #     ceng_population = array(population[layer_dict[i+1]])
+    #     N = ceng_population.shape[0]
+    #     n = len(array(list(set([tuple(t) for t in ceng_population]))))
+    #     print("第 ", i, "层的重复率:", n/N, "--该层个体数量:", N, "--不重复个体数量:", n)
+    #
+    # print(len(indicate))
     # 返回新种群
     return population[indicate]
 

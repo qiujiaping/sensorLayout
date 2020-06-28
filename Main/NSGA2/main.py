@@ -20,7 +20,7 @@ import time
 import wntr
 class SensorPlacement():
     def __init__(self,inp_path,pr_path,allCoverRelation,pop_size=100, chromosome_len=10,
-                 cross_probability=0.8, mutation_probability=0.2, iterations_num=20):
+                 cross_probability=0.8, mutation_probability=0.2, iterations_num=5):
         """
         初始化参数
         :param inp_path: 水力模型位置
@@ -85,29 +85,47 @@ class SensorPlacement():
         allCoverRelation=self.allCoverRelation
         dn = distance_nodeDir(self.inp_path)
         topo_distance = dn.topo_distance()
+        prMat=np.array([single_pr / np.linalg.norm(single_pr) if np.linalg.norm(single_pr) != 0 else single_pr for single_pr in prMat])
+        # project = np.dot(prMat, prMat.T)
+        # coverLeak_like_index = [np.where(row > 0.95) for row in project]
+        # leak_like_dir = dict(zip(list(range(811)), coverLeak_like_index))
+        # a = []  # exceed_distance越大代表超出与所有真正泄漏距离阈值的相似泄漏的比例越大
+        # for leak_node_index in leak_like_dir.keys():
+        #     b=[]
+        #     like_leaks_index = leak_like_dir[leak_node_index][0]
+        #     for like_leak_index in like_leaks_index:
+        #         if (topo_distance[leak_node_index][like_leak_index] > 16):
+        #             b.append(topo_distance[leak_node_index][like_leak_index])
+        #
+        #     a.append(np.array(b))
+        # print('a')
         func_obj = doubleMax(pop, allCoverRelation,prMat,topo_distance,self.nodeIndexId)
-        time_start = time.time()
-        timelist = []
+        # timelist = []
+        start = time.time()
         for i in range(self.iterations_num):
-            copy_pop = pop.copy()
+            time_start = time.time()
+            copy_pop = pop.copy() #保留父代
             selection(pop, func_obj)
             crossover(pop, self.cross_probability)
             mutation(pop, self.mutation_probability, node_count-1)
-            origin_pop = pop
-            temp_pop = vstack((copy_pop, origin_pop))
+            origin_pop = pop    #产生子代
+            temp_pop = vstack((copy_pop, origin_pop)) #子代父代合并
             func_obj =doubleMax(temp_pop, allCoverRelation, prMat, topo_distance, self.nodeIndexId)
-            pop = dominanceMain(temp_pop, func_obj)
-            print("第 %d 次迭代" % i)
-            if(i%10==0):
-                timelist.append(time.time()-time_start)
-        print(timelist)
+            pop = dominanceMain(temp_pop, func_obj)  #解
+            iterations_time=time.time()
+            print("第 %d 次迭代" % i+"耗时：%s"%(iterations_time-time_start))
+            # if(i%10==0):
+            #     timelist.append(time.time()-time_start)
+        # print(timelist)
         # estimate(pop, func_obj)
         pop_node = array(list(set([tuple(t) for t in pop])))      # 个体按数值大小排序, 去重
+        end_time=time.time()
+        print("求解共耗时：%s" % (end_time-start))
         return pop_node
 
     def draw_node(self, pop_result):
-        #for i in pop_result:
-            #print(i)
+        for i in pop_result:
+            print(i)
         allCoverRelation = self.allCoverRelation
         prMat = self.read_csv(self.pr_path)
         dn = distance_nodeDir(self.inp_path)
@@ -131,11 +149,12 @@ class SensorPlacement():
 if __name__ == "__main__":
     # 200个个体, 30个变量， 变量数值范围0到2**14
     # 交叉概率0.6， 编译概率0.1
-    inp = "D:/project/Cpp/data/Net3.inp"
-    pr_path=r"D:\科研\code\sensorLayout\result\Net3\pr.csv"
-    allCoverRelation = getCover((r"D:\科研\code\sensorLayout\result\Net3\dFM.csv"))
-
-    sp = SensorPlacement(inp, pr_path,allCoverRelation,100,10)
+    # inp = "D:/project/Cpp/data/Net3.inp"
+    inp = r"D:\科研\code\sensorLayout\simulation\data\ky2.inp"
+    # pr_path=r"D:\科研\code\sensorLayout\result\Net3\pr.csv"
+    pr_path=r"D:\科研\code\sensorLayout\result\ky2\pr.csv"
+    allCoverRelation = getCover((r"D:\科研\code\sensorLayout\result\ky2\dFM.csv"))
+    sp = SensorPlacement(inp, pr_path,allCoverRelation,100,50,iterations_num=1)
     node_result = sp.iteration()
     sp.draw_node(node_result)
 
