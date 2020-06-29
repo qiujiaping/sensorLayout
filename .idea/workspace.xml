@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="NSGA2版本1.0">
-      <change afterPath="$PROJECT_DIR$/simulation/data/ky2.inp" afterDir="false" />
+    <list default="true" id="338848a6-7105-4341-a5c4-5d10d769e5ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Main/tools/qgis_node_select.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/NSGA2/dominanceMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/NSGA2/dominanceMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/NSGA2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/NSGA2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/function/funUserDefine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/function/funUserDefine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/tools/disAndNodeDir.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/tools/disAndNodeDir.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/wntrSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/wntrSimulation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,26 +53,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/simulation/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/result/ky2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\result\ky2" />
+      <recent name="D:\科研\code\sensorLayout\Main\tools" />
       <recent name="D:\科研\code\sensorLayout\simulation\data" />
       <recent name="D:\科研\code\sensorLayout\simulation" />
       <recent name="D:\科研\code\sensorLayout\Main" />
-      <recent name="D:\科研\code\sensorLayout\Main\NSGA2" />
-      <recent name="D:\科研\code\sensorLayout\Main\tools" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\科研\code\sensorLayout\Main\tools" />
       <recent name="D:\科研\code\sensorLayout\result\ky8" />
       <recent name="D:\科研\code\sensorLayout\result\CTOWN" />
       <recent name="D:\科研\code\sensorLayout\simulation\data" />
       <recent name="D:\科研\code\sensorLayout\main\tools" />
-      <recent name="D:\科研\code\sensorLayout\Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.qgis_node_select">
     <configuration name="Data (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,27 +86,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:\科研\code\sensorLayout\Data\getMat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="crossover" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="sensorLayout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/NSGA2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/NSGA2/crossover.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,6 +157,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="qgis_node_select" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sensorLayout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/tools/qgis_node_select.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="wntrSimulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sensorLayout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,18 +202,18 @@
     <list>
       <item itemvalue="Python.Data (1)" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.crossover" />
       <item itemvalue="Python.mutation" />
       <item itemvalue="Python.wntrSimulation" />
       <item itemvalue="Python.disAndNodeDir" />
+      <item itemvalue="Python.qgis_node_select" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.qgis_node_select" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.disAndNodeDir" />
         <item itemvalue="Python.wntrSimulation" />
         <item itemvalue="Python.mutation" />
-        <item itemvalue="Python.crossover" />
       </list>
     </recent_temporary>
   </component>
@@ -419,7 +415,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593163547962</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="NSGA2版本1.0+ky2实验数据（此前是Net3）">
+      <created>1593336793678</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336793678</updated>
+    </task>
+    <task id="LOCAL-00027" summary="NSGA2版本1.0+ky2实验数据（此前是Net3）">
+      <created>1593336849698</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336849698</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -497,7 +507,8 @@
     <MESSAGE value="脱离epanet模拟，仅使用wntr模拟泄漏" />
     <MESSAGE value="双目标函数定义完成，都是最大化" />
     <MESSAGE value="NSGA2版本1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSGA2版本1.0" />
+    <MESSAGE value="NSGA2版本1.0+ky2实验数据（此前是Net3）" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSGA2版本1.0+ky2实验数据（此前是Net3）" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="38" key="#Notifications" timestamp="1592660592569">
@@ -508,18 +519,18 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="0" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1280.680@0.40.1280.680" timestamp="1590241071495" />
-    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590853591854">
+    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593393067941">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1280.680@0.40.1280.680" timestamp="1590853591854" />
+    <state x="386" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1280.680@0.40.1280.680" timestamp="1593393067941" />
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588841324536">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser/0.40.1280.680@0.40.1280.680" timestamp="1588841324536" />
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592322300690">
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593354274628">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1592322300690" />
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1593354274628" />
     <state x="351" y="40" key="#start" timestamp="1590027300374">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -532,11 +543,11 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="121" y="81" width="953" height="598" key="#xdebugger.evaluate/0.40.1280.680@0.40.1280.680" timestamp="1592575559310" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1593336792771">
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2" timestamp="1593336848785">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592036463215" />
-    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1593336792771" />
+    <state x="283" y="40" width="971" height="680" key="CommitChangelistDialog2/0.40.1280.680@0.40.1280.680" timestamp="1593336848785" />
     <state width="1190" height="384" key="DebuggerActiveHint" timestamp="1593320366260">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -546,11 +557,11 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="93" y="133" width="1095" height="495" key="DiffContextDialog/0.40.1280.680@0.40.1280.680" timestamp="1592576692004" />
-    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1592486253042">
+    <state x="421" y="122" key="FileChooserDialogImpl" timestamp="1593391449618">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592037045252" />
-    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1592486253042" />
+    <state x="421" y="122" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1593391449618" />
     <state x="465" y="294" width="375" height="173" key="Github.CreateGistDialog" timestamp="1589383190263">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -563,46 +574,46 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="503" y="271" key="Github.ShareDialog/0.40.1280.680@0.40.1280.680" timestamp="1589388129031" />
-    <state width="1259" height="137" key="GridCell.Tab.0.bottom" timestamp="1593334575109">
+    <state width="1259" height="184" key="GridCell.Tab.0.bottom" timestamp="1593392980603">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592068264392" />
-    <state width="1259" height="137" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593334575109" />
-    <state width="1259" height="137" key="GridCell.Tab.0.center" timestamp="1593334575109">
+    <state width="1259" height="184" key="GridCell.Tab.0.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593392980603" />
+    <state width="1259" height="184" key="GridCell.Tab.0.center" timestamp="1593392980603">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="137" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1593334575109" />
-    <state width="1259" height="137" key="GridCell.Tab.0.left" timestamp="1593334575109">
+    <state width="1259" height="184" key="GridCell.Tab.0.center/0.40.1280.680@0.40.1280.680" timestamp="1593392980603" />
+    <state width="1259" height="184" key="GridCell.Tab.0.left" timestamp="1593392980603">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="137" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1593334575109" />
-    <state width="1259" height="137" key="GridCell.Tab.0.right" timestamp="1593334575109">
+    <state width="1259" height="184" key="GridCell.Tab.0.left/0.40.1280.680@0.40.1280.680" timestamp="1593392980603" />
+    <state width="1259" height="184" key="GridCell.Tab.0.right" timestamp="1593392980603">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="137" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1593334575109" />
-    <state width="1259" height="90" key="GridCell.Tab.1.bottom" timestamp="1593325361541">
+    <state width="1259" height="184" key="GridCell.Tab.0.right/0.40.1280.680@0.40.1280.680" timestamp="1593392980603" />
+    <state width="1259" height="144" key="GridCell.Tab.1.bottom" timestamp="1593357740510">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="90" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593325361541" />
-    <state width="1259" height="90" key="GridCell.Tab.1.center" timestamp="1593325361541">
+    <state width="1259" height="144" key="GridCell.Tab.1.bottom/0.40.1280.680@0.40.1280.680" timestamp="1593357740510" />
+    <state width="1259" height="144" key="GridCell.Tab.1.center" timestamp="1593357740509">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="90" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1593325361541" />
-    <state width="1259" height="90" key="GridCell.Tab.1.left" timestamp="1593325361541">
+    <state width="1259" height="144" key="GridCell.Tab.1.center/0.40.1280.680@0.40.1280.680" timestamp="1593357740509" />
+    <state width="1259" height="144" key="GridCell.Tab.1.left" timestamp="1593357740509">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="90" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1593325361541" />
-    <state width="1259" height="90" key="GridCell.Tab.1.right" timestamp="1593325361541">
+    <state width="1259" height="144" key="GridCell.Tab.1.left/0.40.1280.680@0.40.1280.680" timestamp="1593357740509" />
+    <state width="1259" height="144" key="GridCell.Tab.1.right" timestamp="1593357740509">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state width="1259" height="19" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592068264391" />
-    <state width="1259" height="90" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1593325361541" />
+    <state width="1259" height="144" key="GridCell.Tab.1.right/0.40.1280.680@0.40.1280.680" timestamp="1593357740509" />
     <state x="471" y="103" width="599" height="555" key="RollbackChangesDialog" timestamp="1590282955958">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
@@ -611,11 +622,11 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="142" y="40" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1592318143912" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1593163557541">
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1593336937197">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1592036474396" />
-    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1593163557541" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.40.1280.680@0.40.1280.680" timestamp="1593336937197" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1593319795092">
       <screen x="0" y="40" width="1280" height="680" />
     </state>

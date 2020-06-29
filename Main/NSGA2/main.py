@@ -154,7 +154,7 @@ if __name__ == "__main__":
     # pr_path=r"D:\科研\code\sensorLayout\result\Net3\pr.csv"
     pr_path=r"D:\科研\code\sensorLayout\result\ky2\pr.csv"
     allCoverRelation = getCover((r"D:\科研\code\sensorLayout\result\ky2\dFM.csv"))
-    sp = SensorPlacement(inp, pr_path,allCoverRelation,100,50,iterations_num=1)
+    sp = SensorPlacement(inp, pr_path,allCoverRelation,100,50,iterations_num=200)
     node_result = sp.iteration()
     sp.draw_node(node_result)
 
